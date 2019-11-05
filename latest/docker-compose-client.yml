@@ -1,0 +1,12 @@
+version: '2.3'
+services:
+  zoomdata-client:
+    image: ${CLIENT_REPO}zoomdata-client:${CLIENT_TAG}
+      
+  zoomdata-web:
+    volumes_from:
+      - zoomdata-client
+    depends_on:
+      - zoomdata-consul
+      - zoomdata-client
+

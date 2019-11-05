@@ -1,0 +1,58 @@
+version: '2.3'
+services:
+  # --- Zoomdata services (web, qe) --------
+  zoomdata-web:
+    hostname: zoomdata-web
+    image: ${ZD_REPO}zoomdata:${ZD_TAG}
+    environment:
+      DISCOVERY_REGISTRY_HOST: zoomdata-consul
+    ports:
+      - 8080:8080
+      - 8443:8443
+    volumes:
+      - ./${CONFIG_SET}:/etc/zoomdata
+      - ./logs:/opt/zoomdata/logs
+    mem_limit: 1536M
+    depends_on:
+      - zoomdata-postgres
+      - zoomdata-consul
+
+  zoomdata-query-engine:
+    hostname: zoomdata-query-engine
+    image: ${ZD_REPO}zoomdata-query-engine:${ZD_TAG}
+    environment:
+      DISCOVERY_REGISTRY_HOST: zoomdata-consul
+    ports:
+      - 5580:5580
+      - 4040:4040
+    volumes:
+      - ./${CONFIG_SET}:/etc/zoomdata
+      - ./logs:/opt/zoomdata/logs
+    mem_limit: 2048M
+    depends_on:
+      - zoomdata-postgres
+      - zoomdata-consul
+
+  # --- Infrastructure services (consul,postgres) -------------------
+  zoomdata-consul:
+    hostname: zoomdata-consul
+    image: consul:1.2.2
+    ports:
+      - 8500:8500
+    volumes:
+      - ./data/consul:/consul/data
+      - ./${CONFIG_SET}/consul:/consul/config
+    mem_limit: 128M
+
+  zoomdata-postgres:
+    hostname: zoomdata-postgres
+    image: postgres:9.5
+    environment:
+      - POSTGRES_DB=postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - ./data/pgdata:/var/lib/postgresql/data
+      - ./${CONFIG_SET}/pginit:/docker-entrypoint-initdb.d
+    mem_limit: 256M
+

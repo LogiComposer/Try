@@ -1,0 +1,5 @@
+-Xms256m
+-Xmx3096m
+-XX:MaxRAM=4096M
+-Dlog.console.level=INFO
+-Dlogback.console=INFO

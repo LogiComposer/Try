@@ -1,0 +1,3 @@
+-Xmx512m
+-XX:MaxRAM=786M
+-Dlog.console.level=INFO

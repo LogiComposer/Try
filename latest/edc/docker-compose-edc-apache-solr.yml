@@ -1,0 +1,16 @@
+version: '2.3'
+services:
+  zoomdata-edc-apache-solr:
+    hostname: zoomdata-edc-apache-solr
+    image: ${EDC_REPO}zoomdata-edc-apache-solr:${EDC_TAG}
+    environment:
+      DISCOVERY_REGISTRY_HOST: zoomdata-consul
+    ports:
+      - 8115:8115
+    volumes:
+      - ./${CONFIG_SET}:/etc/zoomdata
+      - ./logs:/opt/zoomdata/logs
+    mem_limit: 400M
+    stop_grace_period: 15s
+    depends_on:
+      - zoomdata-consul

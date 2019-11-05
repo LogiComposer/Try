@@ -1,0 +1,33 @@
+version: '2.3'
+services:
+  zoomdata-data-writer:
+    hostname: zoomdata-data-writer
+    image: ${SW_REPO}data-writer-postgresql:${SW_TAG}
+    environment:
+      DISCOVERY_REGISTRY_HOST: zoomdata-consul
+    ports:
+      - 8081:8081
+    volumes:
+      - ./${CONFIG_SET}:/etc/zoomdata
+      - ./logs:/opt/zoomdata/logs
+    mem_limit: 786M
+    depends_on:
+      - zoomdata-consul
+      - zoomdata-postgres
+      - zoomdata-edc-postgresql
+
+  # Postgres connector is required for the Postgres stream writer
+  zoomdata-edc-postgresql:
+    hostname: zoomdata-edc-postgresql
+    image: ${EDC_REPO}zoomdata-edc-postgresql:${EDC_TAG}
+    environment:
+      DISCOVERY_REGISTRY_HOST: zoomdata-consul
+    ports:
+      - 8105:8105
+    volumes:
+      - ./${CONFIG_SET}:/etc/zoomdata
+      - ./logs:/opt/zoomdata/logs
+    mem_limit: 400M
+    stop_grace_period: 15s
+    depends_on:
+      - zoomdata-consul
