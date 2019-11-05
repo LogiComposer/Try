@@ -7,3 +7,5 @@ To try latest Zoomdata execute this code
 cd latest
 ./try-zoomdata.sh up -d
 ```
+
+make sure you have `docker` and `docker-compose` installed before running this commands.
