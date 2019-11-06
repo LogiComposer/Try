@@ -2,7 +2,7 @@
 
 # Zoomdata try and buy docker based distribution.
 
-To try latest Zoomdata execute this code
+To try latest Zoomdata clone this repo (or download as zip file) and execute this code in your terminal
 ```
 cd latest
 ./try-zoomdata.sh up -d
