@@ -9,3 +9,9 @@ cd latest
 ```
 
 make sure you have `docker` and `docker-compose` installed before running this commands.
+
+# Zoomdata login info
+
+Use admin/admin to access data and visualizations
+Use supervisor/supervisor to configure the instance
+
