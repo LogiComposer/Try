@@ -56,3 +56,10 @@ services:
       - ./${CONFIG_SET}/pginit:/docker-entrypoint-initdb.d
     mem_limit: 256M
 
+  # --- Post Start setup docker container
+  zoomdata-setup:
+    hostname: zoomdata-setup
+    build:
+      context: ./setup
+    depends_on:
+      - zoomdata-web
