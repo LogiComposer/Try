@@ -28,7 +28,7 @@ services:
     volumes:
       - ./${CONFIG_SET}:/etc/zoomdata
       - ./logs:/opt/zoomdata/logs
-    mem_limit: 2048M
+    mem_limit: 4048M
     depends_on:
       - zoomdata-postgres
       - zoomdata-consul

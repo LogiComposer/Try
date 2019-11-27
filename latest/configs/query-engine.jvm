@@ -1,5 +1,5 @@
--Xms2g
--Xmx6g
--XX:MaxRAM=7g
+-Xms1g
+-Xmx3g
+-XX:MaxRAM=4g
 -Dlog.console.level=INFO
 -Dlogback.console=INFO
