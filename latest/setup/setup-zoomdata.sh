@@ -24,6 +24,13 @@ if [ $timeout_counter -lt $DEFAULT_TIMEOUT ]; then
         -H "Content-Type: application/vnd.zoomdata.v2+json" \
         -H "Accept: */*" \
         -d '[{"user": "admin", "password": "admin"}, {"user": "supervisor", "password": "supervisor"}]'
+
+    echo "Setting up demo RTS connector and dashboard"
+    /supply-files/create-rts.sh \
+        -a 'admin:admin' \
+        -s 'supervisor:supervisor' \
+        -z http://zoomdata-web:8080/zoomdata \
+        -c http://zoomdata-edc-rts:8108/connector
 else
     echo "Zoomdata wasn't able to start within $DEFAULT_TIMEOUT seconds. Examine the docker logs."
 fi
