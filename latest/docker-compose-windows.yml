@@ -1,0 +1,9 @@
+version: '2.3'
+services:
+
+  zoomdata-postgres:
+    volumes:
+      - postgres-data-volume:/var/lib/postgresql/data
+
+volumes:
+  postgres-data-volume:

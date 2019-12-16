@@ -10,7 +10,6 @@ services:
     volumes:
       - ./${CONFIG_SET}:/etc/zoomdata
       - ./logs:/opt/zoomdata/logs
-    mem_limit: 786M
     depends_on:
       - zoomdata-consul
       - zoomdata-postgres
@@ -27,7 +26,6 @@ services:
     volumes:
       - ./${CONFIG_SET}:/etc/zoomdata
       - ./logs:/opt/zoomdata/logs
-    mem_limit: 400M
     stop_grace_period: 15s
     depends_on:
       - zoomdata-consul

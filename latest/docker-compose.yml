@@ -8,11 +8,9 @@ services:
       DISCOVERY_REGISTRY_HOST: zoomdata-consul
     ports:
       - 8080:8080
-      - 8443:8443
     volumes:
       - ./${CONFIG_SET}:/etc/zoomdata
       - ./logs:/opt/zoomdata/logs
-    mem_limit: 1536M
     depends_on:
       - zoomdata-postgres
       - zoomdata-consul
@@ -28,7 +26,6 @@ services:
     volumes:
       - ./${CONFIG_SET}:/etc/zoomdata
       - ./logs:/opt/zoomdata/logs
-    mem_limit: 4048M
     depends_on:
       - zoomdata-postgres
       - zoomdata-consul
@@ -42,7 +39,6 @@ services:
     volumes:
       - ./data/consul:/consul/data
       - ./${CONFIG_SET}/consul:/consul/config
-    mem_limit: 128M
 
   zoomdata-postgres:
     hostname: zoomdata-postgres
@@ -54,7 +50,6 @@ services:
     volumes:
       - ./data/pgdata:/var/lib/postgresql/data
       - ./${CONFIG_SET}/pginit:/docker-entrypoint-initdb.d
-    mem_limit: 256M
 
   # --- Post Start setup docker container
   zoomdata-setup:
