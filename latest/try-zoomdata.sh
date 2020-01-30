@@ -19,13 +19,15 @@ docker-compose \
     -f edc/docker-compose-edc-postgresql.yml \
     "$@"
 
-echo "Waiting for Zoomdata instance to start. Max 300 seconds"
-until $(curl --output /dev/null --silent --head --fail http://zoomdata-web:8080); do
-    printf '.'
-    sleep 1
-    timeout_counter=$((timeout_counter+1))
-    if [ $timeout_counter -ge $DEFAULT_TIMEOUT ]; then
-        break
-    fi
-done
-echo
+if [ "$1" == "up" ]; then
+    echo "Waiting for Zoomdata instance to start. Max 300 seconds"
+    until $(curl --output /dev/null --silent --head --fail http://zoomdata-web:8080); do
+        printf '.'
+        sleep 1
+        timeout_counter=$((timeout_counter+1))
+        if [ $timeout_counter -ge $DEFAULT_TIMEOUT ]; then
+            break
+        fi
+    done
+    echo
+fi
