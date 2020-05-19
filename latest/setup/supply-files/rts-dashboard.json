@@ -1,2251 +1,2445 @@
 {
-  "bookmarks": [
-    {
-      "createdByUserID": "5c7e71c292d32b4b4d0c9551",
-      "visualizations": [
-        {
-          "ownerType": "DASHBOARD",
-          "layout": {
-            "rowSpan": 6,
-            "col": 1,
-            "colSpan": 5,
-            "row": 7
-          },
-          "ownerSourceId": "5c7e720d92d32b4b4d0c96d0",
-          "widgetId": "fa6b3f7bd5c2aba5b55a319020000eb7",
-          "name": "Bars",
-          "visId": "5c7e71c392d32b4b4d0c9564",
-          "source": {
-            "sourceId": "5c7e720d92d32b4b4d0c96d0",
-            "variables": {
-              "Multi Group By": [
-                {
-                  "colorNumb": 10,
-                  "groupColorSet": "ZoomSequential",
-                  "groupColors": {},
-                  "limit": 10,
-                  "name": "category",
-                  "autoShowColorLegend": false,
-                  "sort": {
-                    "name": "count",
-                    "dir": "desc"
-                  },
-                  "label": "Product Category",
-                  "type": "ATTRIBUTE",
-                  "autoColor": true
-                }
-              ],
-              "Chart Name": "",
-              "UberBarsSettings": {
-                "showAbsoluteValues": false,
-                "showGroupLabels": true,
-                "thickness": "100",
-                "showYGrid": true,
-                "showXGrid": true,
-                "chartType": "plain",
-                "showRelativeValues": false,
-                "chartOrientation": "vertical",
-                "enableLogScale": false
-              },
-              "Metric": [
-                {
-                  "name": "count"
-                }
-              ],
-              "Bar Color": [
-                {
-                  "colorConfig": {
-                    "colorNumb": 3,
-                    "colorScaleType": "gradient",
-                    "autoShowColorLegend": false,
-                    "colorSet": "ZoomSequential",
-                    "autoColor": true,
-                    "colors": [
-                      {
-                        "color": "#ffc65f",
-                        "name": "Color 0"
-                      },
-                      {
-                        "color": "#9eb778",
-                        "name": "Color 1"
-                      },
-                      {
-                        "color": "#0096b6",
-                        "name": "Color 2"
-                      }
-                    ],
-                    "legendType": "palette"
-                  },
-                  "func": "sum",
-                  "name": "price"
-                }
-              ],
-              "Chart Description": "",
-              "Rulers": {
-                "reflines": [],
-                "axis": [
-                  {
-                    "logScaleEnabled": false,
-                    "stepAuto": true,
-                    "metricsName": "Volume",
-                    "toAuto": true,
-                    "name": "Metric",
-                    "from": 0,
-                    "step": 20,
-                    "to": 100,
-                    "axis": "Metric",
-                    "type": "yAxis",
-                    "fromAuto": true
-                  }
-                ],
-                "gridlines": {
-                  "X1grid": false,
-                  "X2grid": false,
-                  "Y1grid": true,
-                  "Y2grid": false
-                }
-              },
-              "Font": {
-                "barLabels": {
-                  "size": "normal",
-                  "style": "",
-                  "align": "left",
-                  "typeface": "sans"
-                },
-                "title": {
-                  "size": "normal",
-                  "style": "",
-                  "align": "left",
-                  "typeface": "sans"
-                }
-              }
-            },
-            "sourceType": "EDC2",
-            "textSearchEnabled": false,
-            "playbackMode": true,
-            "filters": [],
-            "sourceName": "Real Time Sales",
-            "aggregateFilters": [],
-            "live": true
-          },
-          "lastModified": 0,
-          "type": "UBER_BARS",
-          "enabled": false,
-          "controlsCfg": {
-            "id": "5c7e721192d32b4b4d0c96fe",
-            "timeControlCfg": {
-              "timeField": "ts",
-              "from": "+$now_-1_hour",
-              "to": "+$now"
-            },
-            "playerControlCfg": {
-              "timeWindowScale": "ROLLING",
-              "pauseAfterRead": false,
-              "speed": 1
-            }
-          },
-          "filterableInAggregate": true
-        },
-        {
-          "ownerType": "DASHBOARD",
-          "layout": {
-            "rowSpan": 6,
-            "col": 1,
-            "colSpan": 4,
-            "row": 1
-          },
-          "ownerSourceId": "5c7e720d92d32b4b4d0c96d0",
-          "widgetId": "f0aab2a66479ce0292ead2ddcf48be5b",
-          "name": "Pie",
-          "visId": "5c7e71c392d32b4b4d0c957a",
-          "source": {
-            "sourceId": "5c7e720d92d32b4b4d0c96d0",
-            "variables": {
-              "Chart Name": "",
-              "Size": [
-                {
-                  "name": "count"
-                }
-              ],
-              "Chart Description": "",
-              "Group By": {
-                "groupColorSet": "ZoomPalette",
-                "name": "group",
-                "limit": 10,
-                "autoShowColorLegend": false,
-                "sort": {
-                  "name": "count",
-                  "dir": "desc"
-                },
-                "autoColor": false
-              }
-            },
-            "sourceType": "EDC2",
-            "textSearchEnabled": false,
-            "playbackMode": true,
-            "filters": [],
-            "sourceName": "Real Time Sales",
-            "aggregateFilters": [],
-            "live": true
-          },
-          "lastModified": 0,
-          "type": "PIE",
-          "enabled": false,
-          "controlsCfg": {
-            "id": "5c7e721192d32b4b4d0c9700",
-            "timeControlCfg": {
-              "timeField": "ts",
-              "from": "+$now_-1_hour",
-              "to": "+$now"
-            },
-            "playerControlCfg": {
-              "timeWindowScale": "ROLLING",
-              "pauseAfterRead": false,
-              "speed": 1
-            }
-          },
-          "filterableInAggregate": true
-        },
-        {
-          "ownerType": "DASHBOARD",
-          "layout": {
-            "rowSpan": 6,
-            "col": 12,
-            "colSpan": 5,
-            "row": 7
-          },
-          "ownerSourceId": "5c7e720d92d32b4b4d0c96d0",
-          "widgetId": "2b1a548cb588a569be1d6bc99cd86d45",
-          "name": "Pivot Table",
-          "visId": "5c7e71c392d32b4b4d0c957f",
-          "source": {
-            "sourceId": "5c7e720d92d32b4b4d0c96d0",
-            "variables": {
-              "Total Sorting": [
-                {
-                  "name": "count",
-                  "filters": [
-                    {
-                      "aggregation": {
-                        "field": {
-                          "name": "usergender"
-                        },
-                        "type": "TERMS"
-                      },
-                      "value": ""
-                    }
-                  ],
-                  "dir": "desc",
-                  "cell": {
-                    "container": "RIGHT_TABLE_HEADER",
-                    "colKey": "RIGHT0",
-                    "data": {
-                      "name": "count",
-                      "label": "Volume",
-                      "type": "NUMBER"
-                    },
-                    "isResize": true,
-                    "isTotal": true,
-                    "isMetric": true,
-                    "colWidth": 84.41995,
-                    "isSortable": true,
-                    "drawOpt": {
-                      "border": true,
-                      "bg": true,
-                      "text": {
-                        "horizontal": {
-                          "left": true,
-                          "center": false,
-                          "right": false
-                        },
-                        "vertical": {
-                          "middle": true,
-                          "top": false,
-                          "bottom": false
-                        }
-                      }
-                    },
-                    "title": "Volume",
-                    "type": "th",
-                    "colspan": 1,
-                    "path": "",
-                    "pos": {
-                      "y1": 36,
-                      "x1": 313.58005,
-                      "y2": 72,
-                      "x2": 398
-                    },
-                    "rowspan": 1,
-                    "rowIdx": 1,
-                    "resizeCfg": {
-                      "colKey": "RIGHT0",
-                      "metricInfo": {
-                        "name": "count",
-                        "label": "Volume",
-                        "type": "NUMBER"
-                      }
-                    },
-                    "height": 36,
-                    "isLabel": true,
-                    "colIdx": 0,
-                    "labelCfg": {
-                      "isHovered": false
-                    },
-                    "textWidth": 43.419952,
-                    "hoverDirection": "COL",
-                    "odd": true,
-                    "sortCfg": {
-                      "state": true,
-                      "dir": "desc"
-                    },
-                    "even": false,
-                    "name": "count"
-                  }
-                }
-              ],
-              "Row Sorting": [],
-              "Chart Description": "",
-              "Column Sorting": [
-                {
-                  "name": "usergender",
-                  "dir": "asc",
-                  "cell": {
-                    "container": "LEFT_TABLE_HEADER",
-                    "isLabel": true,
-                    "colIdx": 1,
-                    "data": {
-                      "sourceId": "57d823bcef8699595c0c127f",
-                      "refreshable": false,
-                      "checkedByDefault": true,
-                      "visible": true,
-                      "storageConfig": {
-                        "originalName": "USERGENDER",
-                        "min": 4,
-                        "originalType": "ATTRIBUTE",
-                        "max": 6,
-                        "rawFormat": {
-                          "RAW_TYPE": "VARCHAR",
-                          "RAW_TYPE_CODE": "12"
-                        },
-                        "metaFlags": [],
-                        "cardinality": 2
-                      },
-                      "effectiveMax": 6,
-                      "label": "Usergender",
-                      "rawFormatSupportTimeGroup": false,
-                      "type": "ATTRIBUTE",
-                      "parentField": false,
-                      "effectiveMin": 4,
-                      "distinctCount": false,
-                      "customListValuesOnly": false,
-                      "name": "usergender",
-                      "facet": false,
-                      "fieldId": "57d823bcef8699595c0c1285"
-                    },
-                    "isResize": true,
-                    "labelCfg": {
-                      "isHovered": false
-                    },
-                    "isMetric": false,
-                    "colWidth": 10,
-                    "isSortable": true,
-                    "drawOpt": {
-                      "border": true,
-                      "bg": true,
-                      "text": {
-                        "horizontal": {
-                          "left": true,
-                          "center": false,
-                          "right": false
-                        },
-                        "vertical": {
-                          "middle": true,
-                          "top": false,
-                          "bottom": false
-                        }
-                      }
-                    },
-                    "textWidth": 66.780914,
-                    "title": "Usergender",
-                    "type": "th",
-                    "hoverDirection": "ROW",
-                    "colspan": 1,
-                    "sortCfg": {
-                      "name": "usergender",
-                      "state": true,
-                      "dir": "asc"
-                    },
-                    "isColumnAttribute": true,
-                    "pos": {
-                      "y1": 0,
-                      "x1": 10,
-                      "y2": 36,
-                      "x2": 20
-                    },
-                    "isAttribute": true,
-                    "rowspan": 1,
-                    "rowIdx": 0,
-                    "resizeCfg": {
-                      "colKey": "LEFT1",
-                      "metricInfo": {}
-                    },
-                    "height": 36
-                  }
-                }
-              ],
-              "Font": {
-                "title": {
-                  "size": "normal",
-                  "style": "",
-                  "align": "left",
-                  "typeface": "sans"
-                }
-              },
-              "Metric Sorting": [],
-              "Pagination": {
-                "pagesCount": 1,
-                "index": 0,
-                "precise": true
-              },
-              "Metrics": [
-                {
-                  "name": "count"
-                }
-              ],
-              "Chart Name": "",
-              "Column Attributes": [
-                {
-                  "name": "usergender"
-                }
-              ],
-              "Metric Direction": "Columns",
-              "Row Attributes": [
-                {
-                  "name": "userincome"
-                }
-              ],
-              "Rows per Page": 200,
-              "Column Sizes": {
-                "LEFT1": 80,
-                "Femalecount": 84.41995,
-                "Malecount": 80.41995
-              }
-            },
-            "sourceType": "EDC2",
-            "textSearchEnabled": false,
-            "playbackMode": true,
-            "filters": [],
-            "sourceName": "Real Time Sales",
-            "aggregateFilters": [],
-            "live": true
-          },
-          "lastModified": 0,
-          "type": "PIVOT_TABLE",
-          "enabled": false,
-          "controlsCfg": {
-            "id": "5c7e721192d32b4b4d0c9702",
-            "timeControlCfg": {
-              "timeField": "ts",
-              "from": "+$now_-1_hour",
-              "to": "+$now"
-            },
-            "playerControlCfg": {
-              "timeWindowScale": "ROLLING",
-              "pauseAfterRead": false,
-              "speed": 1
-            }
-          },
-          "filterableInAggregate": true
-        },
-        {
-          "ownerType": "DASHBOARD",
-          "layout": {
-            "rowSpan": 6,
-            "col": 5,
-            "colSpan": 12,
-            "row": 1
-          },
-          "ownerSourceId": "5c7e720d92d32b4b4d0c96d0",
-          "widgetId": "6aadb776f13006259bd022cd20b49faa",
-          "name": "Scatter Plot",
-          "visId": "5c7e71c292d32b4b4d0c955d",
-          "source": {
-            "sourceId": "5c7e720d92d32b4b4d0c96d0",
-            "variables": {
-              "X Axis": [
-                {
-                  "func": "sum",
-                  "name": "price"
-                }
-              ],
-              "Chart Name": "",
-              "Size": [
-                {
-                  "name": "count"
-                }
-              ],
-              "Y Axis": [
-                {
-                  "func": "avg",
-                  "name": "usersentiment"
-                }
-              ],
-              "Chart Description": "",
-              "Rulers": {
-                "reflines": [],
-                "axis": [
-                  {
-                    "logScaleEnabled": false,
-                    "stepAuto": false,
-                    "metricsName": "Actual Sales",
-                    "toAuto": false,
-                    "name": "X Axis",
-                    "from": 0,
-                    "step": 10000,
-                    "to": "40000",
-                    "axis": "X Axis",
-                    "type": "xAxis",
-                    "fromAuto": false
-                  },
-                  {
-                    "logScaleEnabled": false,
-                    "stepAuto": false,
-                    "metricsName": "Product Satisfaction",
-                    "toAuto": false,
-                    "name": "Y Axis",
-                    "from": "-0.75",
-                    "step": 0.25,
-                    "to": "0.75",
-                    "axis": "Y Axis",
-                    "type": "yAxis",
-                    "fromAuto": false
-                  }
-                ],
-                "gridlines": {
-                  "X1grid": true,
-                  "X2grid": false,
-                  "Y1grid": true,
-                  "Y2grid": false
-                }
-              },
-              "Font": {
-                "title": {
-                  "size": "normal",
-                  "style": "",
-                  "align": "left",
-                  "typeface": "sans"
-                }
-              },
-              "Group By": {
-                "groupColorSet": "ZoomPalette",
-                "name": "sku",
-                "limit": 100,
-                "autoShowColorLegend": false,
-                "sort": {
-                  "metricFunc": "avg",
-                  "name": "price",
-                  "dir": "desc"
-                },
-                "autoColor": false
-              }
-            },
-            "sourceType": "EDC2",
-            "textSearchEnabled": false,
-            "playbackMode": true,
-            "filters": [],
-            "sourceName": "Real Time Sales",
-            "aggregateFilters": [],
-            "live": true
-          },
-          "lastModified": 0,
-          "type": "SCATTERPLOT",
-          "enabled": false,
-          "controlsCfg": {
-            "id": "5c7e721192d32b4b4d0c9704",
-            "timeControlCfg": {
-              "timeField": "ts",
-              "from": "+$now_-1_hour",
-              "to": "+$now"
-            },
-            "playerControlCfg": {
-              "timeWindowScale": "ROLLING",
-              "pauseAfterRead": false,
-              "speed": 1
-            }
-          },
-          "filterableInAggregate": true
-        },
-        {
-          "ownerType": "DASHBOARD",
-          "layout": {
-            "rowSpan": 6,
-            "col": 6,
-            "colSpan": 6,
-            "row": 7
-          },
-          "ownerSourceId": "5c7e720d92d32b4b4d0c96d0",
-          "widgetId": "f0aab2a66479ce0292ead2ddcf481342",
-          "name": "Line Trend: Multiple Metrics",
-          "visId": "5c7e71c392d32b4b4d0c956f",
-          "source": {
-            "sourceId": "5c7e720d92d32b4b4d0c96d0",
-            "variables": {
-              "date": "ts",
-              "Y Color": [
-                {
-                  "colorConfig": {
-                    "colorNumb": 4,
-                    "savedColors": [
-                      {
-                        "color": "#d7191c",
-                        "name": "usersentiment",
-                        "label": "Product Satisfaction"
-                      },
-                      {
-                        "color": "#fdae61",
-                        "name": "count",
-                        "label": "Volume"
-                      },
-                      {
-                        "color": "#a6d96a",
-                        "name": "price",
-                        "label": "Actual Sales"
-                      },
-                      {
-                        "color": "#1a9641",
-                        "name": "plannedsales",
-                        "label": "Planned Sales"
-                      }
-                    ],
-                    "autoShowColorLegend": false,
-                    "colorSet": "RdYlGn",
-                    "colorLegendPosition": {
-                      "top": 0,
-                      "left": "auto",
-                      "bottom": "auto",
-                      "right": 8.3125
-                    },
-                    "legendType": "palette"
-                  },
-                  "name": "count"
-                }
-              ],
-              "Chart Name": "",
-              "Y Axis": [
-                {
-                  "colorConfig": {
-                    "autoShowColorLegend": false
-                  },
-                  "func": "sum",
-                  "name": "price"
-                },
-                {
-                  "colorConfig": {
-                    "autoShowColorLegend": false
-                  },
-                  "func": "sum",
-                  "name": "plannedsales"
-                }
-              ],
-              "Chart Description": "",
-              "Rulers": {
-                "reflines": [],
-                "axis": [
-                  {
-                    "logScaleEnabled": false,
-                    "stepAuto": true,
-                    "metricsName": "Actual Sales",
-                    "toAuto": true,
-                    "name": "Y Axis",
-                    "from": "0.00",
-                    "step": 500000,
-                    "to": "2500000.00",
-                    "axis": "Y Axis",
-                    "type": "yAxis",
-                    "fromAuto": true
-                  }
-                ],
-                "gridlines": {
-                  "X1grid": false,
-                  "X2grid": false,
-                  "Y1grid": true,
-                  "Y2grid": false
-                }
-              },
-              "Trend Attribute": {
-                "name": "ts",
-                "limit": 1000,
-                "sort": {
-                  "name": "ts",
-                  "dir": "asc"
-                }
-              }
-            },
-            "sourceType": "EDC2",
-            "textSearchEnabled": false,
-            "playbackMode": true,
-            "filters": [],
-            "sourceName": "Real Time Sales",
-            "aggregateFilters": [],
-            "live": true
-          },
-          "lastModified": 0,
-          "type": "LINE_CHART",
-          "enabled": false,
-          "controlsCfg": {
-            "id": "5c7e721192d32b4b4d0c9706",
-            "timeControlCfg": {
-              "timeField": "ts",
-              "from": "+$start_of_data",
-              "to": "+$end_of_data"
-            },
-            "playerControlCfg": {
-              "timeWindowScale": "PINNED",
-              "pauseAfterRead": false,
-              "speed": 1
-            }
-          },
-          "filterableInAggregate": true
-        }
-      ],
-      "lastModifiedDate": "2019-03-05 12:56:49.947",
-      "description": "This is a sample dashboard.",
-      "type": "DASHBOARD",
-      "selectedWidgetId": "fa6b3f7bd5c2aba5b55a319020000eb7",
-      "fieldLinks": [],
-      "lastModifiedByUserID": "5c7e71c292d32b4b4d0c9551",
-      "layout": "4-column",
-      "showDescription": false,
-      "unifiedBarCfgs": [
-        {
-          "widgetIds": [
-            "fa6b3f7bd5c2aba5b55a319020000eb7",
-            "f0aab2a66479ce0292ead2ddcf48be5b",
-            "2b1a548cb588a569be1d6bc99cd86d45",
-            "6aadb776f13006259bd022cd20b49faa"
-          ],
-          "id": "5c7e721192d32b4b4d0c96fc",
-          "timeControlCfg": {
-            "timeField": "ts",
-            "from": "+$now_-1_hour",
-            "to": "+$now"
-          },
-          "playerControlCfg": {
-            "timeWindowScale": "ROLLING",
-            "pauseAfterRead": false,
-            "speed": 1
-          }
-        }
-      ],
-      "createdDate": "2019-03-05 12:56:49.947",
-      "rowFilters": [],
-      "ownerName": "admin",
-      "shareState": "VIEW_ONLY",
-      "name": "RTS Sample Dashboard"
-    }
-  ],
-  "keysets": [],
-  "sources": {
-    "visualizations": [
-      {
-        "name": "Line Trend: Multiple Metrics",
-        "id": "5c7e71c392d32b4b4d0c956f",
-        "type": "LINE_CHART"
-      },
-      {
-        "name": "Tree Map",
-        "id": "5c7e71c392d32b4b4d0c95a2",
-        "type": "TREE_MAP"
-      },
-      {
-        "name": "Word Cloud",
-        "id": "5c7e71c392d32b4b4d0c9574",
-        "type": "WORD_CLOUD"
-      },
-      {
-        "name": "Donut",
-        "id": "5c7e71c392d32b4b4d0c95be",
-        "type": "DONUT"
-      },
-      {
-        "name": "Heat Map",
-        "id": "5c7e71c392d32b4b4d0c95a8",
-        "type": "HEAT_MAP"
-      },
-      {
-        "name": "Raw Data Table",
-        "id": "5c7e71c392d32b4b4d0c9587",
-        "type": "RAW_DATA_TABLE"
-      },
-      {
-        "name": "Packed Bubbles",
-        "id": "5c7e71c292d32b4b4d0c9557",
-        "type": "BUBBLES"
-      },
-      {
-        "name": "Bars: Histogram",
-        "id": "5c7e71c392d32b4b4d0c95e0",
-        "type": "HISTOGRAM"
-      },
-      {
-        "name": "Scatter Plot",
-        "id": "5c7e71c292d32b4b4d0c955d",
-        "type": "SCATTERPLOT"
-      },
-      {
-        "name": "Floating Bubbles",
-        "id": "5c7e71c392d32b4b4d0c95da",
-        "type": "FLOATING_BUBBLES"
-      },
-      {
-        "name": "Bars: Multiple Metrics",
-        "id": "5c7e71c392d32b4b4d0c95ae",
-        "type": "MULTI_METRIC_BARS"
-      },
-      {
-        "name": "Line Trend: Attribute Values",
-        "id": "5c7e71c392d32b4b4d0c958b",
-        "type": "LINE_CHART_CONTINUOUS"
-      },
-      {
-        "name": "KPI",
-        "id": "5c7e71c392d32b4b4d0c95cb",
-        "type": "KPI"
-      },
-      {
-        "name": "Line & Bars Trend",
-        "id": "5c7e71c392d32b4b4d0c95b3",
-        "type": "LINE_AND_BARS"
-      },
-      {
-        "name": "Pie",
-        "id": "5c7e71c392d32b4b4d0c957a",
-        "type": "PIE"
-      },
-      {
-        "name": "Bars",
-        "id": "5c7e71c392d32b4b4d0c9564",
-        "type": "UBER_BARS"
-      },
-      {
-        "name": "Pivot Table",
-        "id": "5c7e71c392d32b4b4d0c957f",
-        "type": "PIVOT_TABLE"
-      },
-      {
-        "name": "Box Plot",
-        "id": "5c7e71c392d32b4b4d0c956a",
-        "type": "BOX_PLOT"
-      }
-    ],
-    "sources": [
-      {
-        "createdByUserID": "5c7e71c292d32b4b4d0c9551",
-        "derivedFields": [],
-        "volumeMetric": {
-          "visible": true,
-          "name": "count",
-          "label": "Volume"
-        },
-        "textSearchEnabled": false,
-        "fusedAttributes": [],
-        "type": "EDC2",
-        "enabled": true,
-        "lastModifiedByUserID": "5c7e71c292d32b4b4d0c9551",
-        "startSpeed": 0,
-        "objectFields": [
-          {
-            "refreshable": false,
-            "sourceId": "5c7e720d92d32b4b4d0c96d0",
-            "checkedByDefault": true,
-            "visible": true,
-            "storageConfig": {
-              "originalName": "GROUP",
-              "min": 3,
-              "originalType": "ATTRIBUTE",
-              "max": 11,
-              "rawFormat": {
-                "RAW_TYPE_CODE": "12"
-              },
-              "metaFlags": [],
-              "cardinality": 5
-            },
-            "effectiveMax": 11,
-            "label": "Group",
-            "rawFormatSupportTimeGroup": false,
-            "type": "ATTRIBUTE",
-            "facetOrder": 0,
-            "parentField": false,
-            "effectiveMin": 3,
-            "distinctCount": false,
-            "lastRefreshDate": "2019-03-05 12:56:45.572",
-            "customListValuesOnly": false,
-            "name": "group",
-            "facet": false,
-            "fieldId": "5c7e720d92d32b4b4d0c96d2"
-          },
-          {
-            "refreshable": false,
-            "sourceId": "5c7e720d92d32b4b4d0c96d0",
-            "checkedByDefault": true,
-            "visible": true,
-            "storageConfig": {
-              "originalName": "CATEGORY",
-              "min": 4,
-              "originalType": "ATTRIBUTE",
-              "max": 15,
-              "rawFormat": {
-                "RAW_TYPE_CODE": "12"
-              },
-              "metaFlags": [],
-              "cardinality": 46
-            },
-            "effectiveMax": 15,
-            "label": "Category",
-            "rawFormatSupportTimeGroup": false,
-            "type": "ATTRIBUTE",
-            "facetOrder": 0,
-            "parentField": false,
-            "effectiveMin": 4,
-            "distinctCount": false,
-            "lastRefreshDate": "2019-03-05 12:56:45.593",
-            "customListValuesOnly": false,
-            "name": "category",
-            "facet": false,
-            "fieldId": "5c7e720d92d32b4b4d0c96d3"
-          },
-          {
-            "refreshable": false,
-            "sourceId": "5c7e720d92d32b4b4d0c96d0",
-            "checkedByDefault": true,
-            "visible": true,
-            "storageConfig": {
-              "originalName": "SKU",
-              "min": 8,
-              "originalType": "ATTRIBUTE",
-              "max": 8,
-              "rawFormat": {
-                "RAW_TYPE_CODE": "12"
-              },
-              "metaFlags": [],
-              "cardinality": 446
-            },
-            "effectiveMax": 8,
-            "label": "Sku",
-            "rawFormatSupportTimeGroup": false,
-            "type": "ATTRIBUTE",
-            "facetOrder": 0,
-            "parentField": false,
-            "effectiveMin": 8,
-            "distinctCount": false,
-            "lastRefreshDate": "2019-03-05 12:56:45.594",
-            "customListValuesOnly": false,
-            "name": "sku",
-            "facet": false,
-            "fieldId": "5c7e720d92d32b4b4d0c96d4"
-          },
-          {
-            "refreshable": false,
-            "sourceId": "5c7e720d92d32b4b4d0c96d0",
-            "checkedByDefault": true,
-            "visible": true,
-            "storageConfig": {
-              "originalName": "USERCITY",
-              "min": 3,
-              "originalType": "ATTRIBUTE",
-              "max": 22,
-              "rawFormat": {
-                "RAW_TYPE_CODE": "12"
-              },
-              "metaFlags": [],
-              "cardinality": 485
-            },
-            "effectiveMax": 22,
-            "label": "Usercity",
-            "rawFormatSupportTimeGroup": false,
-            "type": "ATTRIBUTE",
-            "facetOrder": 0,
-            "parentField": false,
-            "effectiveMin": 3,
-            "distinctCount": false,
-            "lastRefreshDate": "2019-03-05 12:56:45.595",
-            "customListValuesOnly": false,
-            "name": "usercity",
-            "facet": false,
-            "fieldId": "5c7e720d92d32b4b4d0c96d5"
-          },
-          {
-            "refreshable": false,
-            "sourceId": "5c7e720d92d32b4b4d0c96d0",
-            "checkedByDefault": true,
-            "visible": true,
-            "storageConfig": {
-              "originalName": "USERSTATE",
-              "min": 4,
-              "originalType": "ATTRIBUTE",
-              "max": 20,
-              "rawFormat": {
-                "RAW_TYPE_CODE": "12"
-              },
-              "metaFlags": [],
-              "cardinality": 50
-            },
-            "effectiveMax": 20,
-            "label": "Userstate",
-            "rawFormatSupportTimeGroup": false,
-            "type": "ATTRIBUTE",
-            "facetOrder": 0,
-            "parentField": false,
-            "effectiveMin": 4,
-            "distinctCount": false,
-            "lastRefreshDate": "2019-03-05 12:56:45.595",
-            "customListValuesOnly": false,
-            "name": "userstate",
-            "facet": false,
-            "fieldId": "5c7e720d92d32b4b4d0c96d6"
-          },
-          {
-            "refreshable": false,
-            "sourceId": "5c7e720d92d32b4b4d0c96d0",
-            "checkedByDefault": true,
-            "visible": true,
-            "storageConfig": {
-              "originalName": "USERGENDER",
-              "min": 4,
-              "originalType": "ATTRIBUTE",
-              "max": 6,
-              "rawFormat": {
-                "RAW_TYPE_CODE": "12"
-              },
-              "metaFlags": [],
-              "cardinality": 2
-            },
-            "effectiveMax": 6,
-            "label": "Usergender",
-            "rawFormatSupportTimeGroup": false,
-            "type": "ATTRIBUTE",
-            "facetOrder": 0,
-            "parentField": false,
-            "effectiveMin": 4,
-            "distinctCount": false,
-            "lastRefreshDate": "2019-03-05 12:56:45.595",
-            "customListValuesOnly": false,
-            "name": "usergender",
-            "facet": false,
-            "fieldId": "5c7e720d92d32b4b4d0c96d7"
-          },
-          {
-            "refreshable": false,
-            "sourceId": "5c7e720d92d32b4b4d0c96d0",
-            "checkedByDefault": true,
-            "visible": true,
-            "storageConfig": {
-              "originalName": "USERINCOME",
-              "min": 13,
-              "originalType": "ATTRIBUTE",
-              "max": 19,
-              "rawFormat": {
-                "RAW_TYPE_CODE": "12"
-              },
-              "metaFlags": [],
-              "cardinality": 5
-            },
-            "effectiveMax": 19,
-            "label": "Userincome",
-            "rawFormatSupportTimeGroup": false,
-            "type": "ATTRIBUTE",
-            "facetOrder": 0,
-            "parentField": false,
-            "effectiveMin": 13,
-            "distinctCount": false,
-            "lastRefreshDate": "2019-03-05 12:56:45.596",
-            "customListValuesOnly": false,
-            "name": "userincome",
-            "facet": false,
-            "fieldId": "5c7e720d92d32b4b4d0c96d8"
-          },
-          {
-            "refreshable": false,
-            "sourceId": "5c7e720d92d32b4b4d0c96d0",
-            "checkedByDefault": true,
-            "visible": true,
-            "storageConfig": {
-              "originalName": "PRICE",
-              "min": 5,
-              "originalType": "NUMBER",
-              "max": 4886,
-              "rawFormat": {
-                "RAW_TYPE_CODE": "8"
-              },
-              "metaFlags": [],
-              "cardinality": 473
-            },
-            "effectiveMax": 4886,
-            "label": "Price",
-            "rawFormatSupportTimeGroup": false,
-            "numberFieldFormat": {
-              "negative": "SIGNED",
-              "decimals": 2,
-              "id": "5c7e720d92d32b4b4d0c96da",
-              "type": "PLAIN",
-              "standardUnit": "NONE",
-              "separator": true
-            },
-            "type": "NUMBER",
-            "facetOrder": 0,
-            "parentField": false,
-            "effectiveMin": 5,
-            "distinctCount": false,
-            "func": "SUM",
-            "lastRefreshDate": "2019-03-05 12:56:45.596",
-            "customListValuesOnly": false,
-            "name": "price",
-            "facet": false,
-            "fieldId": "5c7e720d92d32b4b4d0c96d9"
-          },
-          {
-            "refreshable": false,
-            "sourceId": "5c7e720d92d32b4b4d0c96d0",
-            "checkedByDefault": true,
-            "visible": true,
-            "storageConfig": {
-              "originalName": "PLANNEDSALES",
-              "min": 3.96,
-              "originalType": "NUMBER",
-              "max": 2276.921,
-              "rawFormat": {
-                "RAW_TYPE_CODE": "8"
-              },
-              "metaFlags": [],
-              "cardinality": 337
-            },
-            "effectiveMax": 2276.921,
-            "label": "Plannedsales",
-            "rawFormatSupportTimeGroup": false,
-            "numberFieldFormat": {
-              "negative": "SIGNED",
-              "decimals": 2,
-              "id": "5c7e720d92d32b4b4d0c96dc",
-              "type": "PLAIN",
-              "standardUnit": "NONE",
-              "separator": true
-            },
-            "type": "NUMBER",
-            "facetOrder": 0,
-            "parentField": false,
-            "effectiveMin": 3.96,
-            "distinctCount": false,
-            "func": "SUM",
-            "lastRefreshDate": "2019-03-05 12:56:45.603",
-            "customListValuesOnly": false,
-            "name": "plannedsales",
-            "facet": false,
-            "fieldId": "5c7e720d92d32b4b4d0c96db"
-          },
-          {
-            "refreshable": false,
-            "sourceId": "5c7e720d92d32b4b4d0c96d0",
-            "checkedByDefault": true,
-            "visible": true,
-            "storageConfig": {
-              "originalName": "USERSENTIMENT",
-              "min": -1,
-              "originalType": "INTEGER",
-              "max": 1,
-              "rawFormat": {
-                "RAW_TYPE_CODE": "4"
-              },
-              "metaFlags": [],
-              "cardinality": 3
-            },
-            "effectiveMax": 1,
-            "label": "Usersentiment",
-            "rawFormatSupportTimeGroup": false,
-            "numberFieldFormat": {
-              "negative": "SIGNED",
-              "decimals": 2,
-              "id": "5c7e720d92d32b4b4d0c96de",
-              "type": "PLAIN",
-              "standardUnit": "NONE",
-              "separator": true
-            },
-            "type": "INTEGER",
-            "facetOrder": 0,
-            "parentField": false,
-            "effectiveMin": -1,
-            "distinctCount": false,
-            "func": "SUM",
-            "lastRefreshDate": "2019-03-05 12:56:45.604",
-            "customListValuesOnly": false,
-            "name": "usersentiment",
-            "facet": false,
-            "fieldId": "5c7e720d92d32b4b4d0c96dd"
-          },
-          {
-            "refreshable": false,
-            "sourceId": "5c7e720d92d32b4b4d0c96d0",
-            "checkedByDefault": true,
-            "visible": true,
-            "storageConfig": {
-              "originalName": "ZIPCODE",
-              "min": 5,
-              "originalType": "ATTRIBUTE",
-              "max": 5,
-              "rawFormat": {
-                "RAW_TYPE_CODE": "12"
-              },
-              "metaFlags": [],
-              "cardinality": 988
-            },
-            "effectiveMax": 5,
-            "label": "Zipcode",
-            "rawFormatSupportTimeGroup": false,
-            "type": "ATTRIBUTE",
-            "facetOrder": 0,
-            "parentField": false,
-            "effectiveMin": 5,
-            "distinctCount": false,
-            "lastRefreshDate": "2019-03-05 12:56:45.605",
-            "customListValuesOnly": false,
-            "name": "zipcode",
-            "facet": false,
-            "fieldId": "5c7e720d92d32b4b4d0c96df"
-          },
-          {
-            "refreshable": false,
-            "sourceId": "5c7e720d92d32b4b4d0c96d0",
-            "checkedByDefault": true,
-            "visible": true,
-            "storageConfig": {
-              "originalName": "COUNTY",
-              "min": 3,
-              "originalType": "ATTRIBUTE",
-              "max": 20,
-              "rawFormat": {
-                "RAW_TYPE_CODE": "12"
-              },
-              "metaFlags": [],
-              "cardinality": 437
-            },
-            "effectiveMax": 20,
-            "label": "County",
-            "rawFormatSupportTimeGroup": false,
-            "type": "ATTRIBUTE",
-            "facetOrder": 0,
-            "parentField": false,
-            "effectiveMin": 3,
-            "distinctCount": false,
-            "lastRefreshDate": "2019-03-05 12:56:45.605",
-            "customListValuesOnly": false,
-            "name": "county",
-            "facet": false,
-            "fieldId": "5c7e720d92d32b4b4d0c96e0"
-          },
-          {
-            "refreshable": false,
-            "sourceId": "5c7e720d92d32b4b4d0c96d0",
-            "checkedByDefault": true,
-            "visible": true,
-            "storageConfig": {
-              "originalName": "COUNTYCODE",
-              "min": 5,
-              "originalType": "ATTRIBUTE",
-              "max": 5,
-              "rawFormat": {
-                "RAW_TYPE_CODE": "12"
-              },
-              "metaFlags": [],
-              "cardinality": 519
-            },
-            "effectiveMax": 5,
-            "label": "Countycode",
-            "rawFormatSupportTimeGroup": false,
-            "type": "ATTRIBUTE",
-            "facetOrder": 0,
-            "parentField": false,
-            "effectiveMin": 5,
-            "distinctCount": false,
-            "lastRefreshDate": "2019-03-05 12:56:45.605",
-            "customListValuesOnly": false,
-            "name": "countycode",
-            "facet": false,
-            "fieldId": "5c7e720d92d32b4b4d0c96e1"
-          },
-          {
-            "refreshable": true,
-            "sourceId": "5c7e720d92d32b4b4d0c96d0",
-            "checkedByDefault": true,
-            "timestampGranularity": "SECOND",
-            "visible": true,
-            "storageConfig": {
-              "originalName": "SHIPDATE",
-              "min": 1551877011000,
-              "originalType": "TIME",
-              "max": 1551963411001,
-              "rawFormat": {
-                "RAW_TYPE_CODE": "93"
-              },
-              "metaFlags": [],
-              "cardinality": 0
-            },
-            "timeZoneId": "UTC",
-            "effectiveMax": 1551963411001,
-            "label": "Shipdate",
-            "rawFormatSupportTimeGroup": true,
-            "type": "TIME",
-            "facetOrder": 0,
-            "parentField": false,
-            "effectiveMin": 1551877011000,
-            "distinctCount": false,
-            "lastRefreshDate": "2019-03-05 12:56:52.023",
-            "customListValuesOnly": false,
-            "name": "shipdate",
-            "timestampFormat": "DEFAULT",
-            "facet": false,
-            "fieldId": "5c7e720d92d32b4b4d0c96e2"
-          },
-          {
-            "refreshable": true,
-            "sourceId": "5c7e720d92d32b4b4d0c96d0",
-            "checkedByDefault": true,
-            "timestampGranularity": "SECOND",
-            "visible": true,
-            "storageConfig": {
-              "originalName": "SALEDATE",
-              "min": 1551790611000,
-              "originalType": "TIME",
-              "max": 1551877011001,
-              "rawFormat": {
-                "RAW_TYPE_CODE": "93"
-              },
-              "metaFlags": [],
-              "cardinality": 0
-            },
-            "timeZoneId": "UTC",
-            "effectiveMax": 1551877011001,
-            "label": "Saledate",
-            "rawFormatSupportTimeGroup": true,
-            "type": "TIME",
-            "facetOrder": 0,
-            "parentField": false,
-            "effectiveMin": 1551790611000,
-            "distinctCount": false,
-            "lastRefreshDate": "2019-03-05 12:56:52.035",
-            "customListValuesOnly": false,
-            "name": "saledate",
-            "timestampFormat": "DEFAULT",
-            "facet": false,
-            "fieldId": "5c7e720d92d32b4b4d0c96e3"
-          },
-          {
-            "refreshable": true,
-            "sourceId": "5c7e720d92d32b4b4d0c96d0",
-            "checkedByDefault": true,
-            "timestampGranularity": "SECOND",
-            "visible": true,
-            "storageConfig": {
-              "originalName": "TS",
-              "min": 1551704211000,
-              "originalType": "TIME",
-              "max": 1551790611001,
-              "rawFormat": {
-                "RAW_TYPE_CODE": "93"
-              },
-              "metaFlags": [
-                "PLAYABLE"
-              ],
-              "cardinality": 0
-            },
-            "timeZoneId": "UTC",
-            "effectiveMax": 1551790611001,
-            "label": "Ts",
-            "rawFormatSupportTimeGroup": true,
-            "type": "TIME",
-            "facetOrder": 0,
-            "parentField": false,
-            "effectiveMin": 1551704211000,
-            "distinctCount": false,
-            "lastRefreshDate": "2019-03-05 12:56:52.048",
-            "customListValuesOnly": false,
-            "name": "ts",
-            "timestampFormat": "DEFAULT",
-            "facet": false,
-            "fieldId": "5c7e720d92d32b4b4d0c96e4"
-          }
-        ],
-        "storageConfiguration": {
-          "schema": "PUBLIC",
-          "partitions": {},
-          "collectionParams": {},
-          "connectionId": "5c7e720b92d32b4b4d0c96cf",
-          "collection": "RTS",
-          "parameters": {}
-        },
-        "delayMillis": 1000,
-        "playbackMode": true,
-        "cacheable": true,
-        "linkedSources": [],
-        "id": "5c7e720d92d32b4b4d0c96d0",
-        "cacheAttributeValues": true,
-        "live": true,
-        "controlsCfg": {
-          "id": "5c7e720d92d32b4b4d0c96d1",
-          "timeControlCfg": {
-            "timeField": "shipdate",
-            "from": "+$now_-1_hour",
-            "to": "-$now"
-          },
-          "playerControlCfg": {
-            "timeWindowScale": "ROLLING"
-          }
-        },
-        "lastModifiedDate": "2019-03-05 12:56:45.358",
-        "queryStrategy": "LOAD_ALL",
-        "delayUnit": "SECONDS",
-        "version": 1,
-        "subStorageType": "RTS",
-        "accountId": "5c7e71c292d32b4b4d0c9550",
-        "createdDate": "2019-03-05 12:56:45.358",
-        "delay": 1,
-        "liveRefreshRate": 1,
-        "name": "Real Time Sales",
-        "hardLimit": 100000
-      }
-    ],
-    "formulas": [],
-    "visualizationDefs": [
-      {
-        "ownerType": "SOURCE",
-        "ownerSourceId": "5c7e720d92d32b4b4d0c96d0",
-        "name": "Pivot Table",
-        "id": "5c7e721192d32b4b4d0c96f3",
-        "visId": "5c7e71c392d32b4b4d0c957f",
-        "source": {
-          "sourceId": "5c7e720d92d32b4b4d0c96d0",
-          "variables": {
-            "Metrics": [
-              {
-                "name": "count"
-              }
-            ],
-            "Column Attributes": [],
-            "Metric Direction": "Columns",
-            "Row Attributes": [
-              {
-                "name": "usergender"
-              }
-            ],
-            "Rows per Page": 200
-          },
-          "sourceType": "EDC2",
-          "textSearchEnabled": false,
-          "playbackMode": true,
-          "filters": [],
-          "sourceName": "Real Time Sales",
-          "aggregateFilters": [],
-          "live": true
-        },
-        "lastModified": 0,
-        "type": "PIVOT_TABLE",
-        "enabled": true
-      },
-      {
-        "ownerType": "SOURCE",
-        "ownerSourceId": "5c7e720d92d32b4b4d0c96d0",
-        "name": "Packed Bubbles",
-        "id": "5c7e721192d32b4b4d0c96fa",
-        "visId": "5c7e71c292d32b4b4d0c9557",
-        "source": {
-          "sourceId": "5c7e720d92d32b4b4d0c96d0",
-          "variables": {
-            "Bubble Size": [
-              {
-                "name": "count"
-              }
-            ],
-            "Bubble Color": [
-              {
-                "colorConfig": {
-                  "autoShowColorLegend": true
-                },
-                "name": "count"
-              }
-            ],
-            "Group By": {
-              "name": "usergender",
-              "limit": 20,
-              "sort": {
-                "name": "count",
-                "dir": "desc"
-              }
-            }
-          },
-          "sourceType": "EDC2",
-          "textSearchEnabled": false,
-          "playbackMode": true,
-          "filters": [],
-          "sourceName": "Real Time Sales",
-          "aggregateFilters": [],
-          "live": true
-        },
-        "lastModified": 0,
-        "type": "BUBBLES",
-        "enabled": true
-      },
-      {
-        "ownerType": "SOURCE",
-        "ownerSourceId": "5c7e720d92d32b4b4d0c96d0",
-        "name": "Bars: Histogram",
-        "id": "5c7e721092d32b4b4d0c96e9",
-        "visId": "5c7e71c392d32b4b4d0c95e0",
-        "source": {
-          "sourceId": "5c7e720d92d32b4b4d0c96d0",
-          "variables": {
-            "Bins Color": "#1f78b4",
-            "Cumulative Line Color": "#ff7f00",
-            "Group By": {
-              "binsType": "auto",
-              "values": "absolute",
-              "name": "usersentiment",
-              "binsWidth": 100,
-              "cumulative": false,
-              "binsCount": 10
-            }
-          },
-          "sourceType": "EDC2",
-          "textSearchEnabled": false,
-          "playbackMode": true,
-          "filters": [],
-          "sourceName": "Real Time Sales",
-          "aggregateFilters": [],
-          "live": true
-        },
-        "lastModified": 0,
-        "type": "HISTOGRAM",
-        "enabled": true
-      },
-      {
-        "ownerType": "SOURCE",
-        "ownerSourceId": "5c7e720d92d32b4b4d0c96d0",
-        "name": "Raw Data Table",
-        "id": "5c7e721092d32b4b4d0c96f2",
-        "visId": "5c7e71c392d32b4b4d0c9587",
-        "source": {
-          "sourceId": "5c7e720d92d32b4b4d0c96d0",
-          "variables": {
-            "Columns": [
-              {
-                "name": "group",
-                "limit": 250
-              },
-              {
-                "name": "category",
-                "limit": 250
-              },
-              {
-                "name": "sku",
-                "limit": 250
-              },
-              {
-                "name": "usercity",
-                "limit": 250
-              },
-              {
-                "name": "userstate",
-                "limit": 250
-              },
-              {
-                "name": "usergender",
-                "limit": 250
-              },
-              {
-                "name": "userincome",
-                "limit": 250
-              },
-              {
-                "name": "price",
-                "limit": 250
-              },
-              {
-                "name": "plannedsales",
-                "limit": 250
-              },
-              {
-                "name": "usersentiment",
-                "limit": 250
-              },
-              {
-                "name": "zipcode",
-                "limit": 250
-              },
-              {
-                "name": "county",
-                "limit": 250
-              },
-              {
-                "name": "countycode",
-                "limit": 250
-              },
-              {
-                "name": "shipdate",
-                "limit": 250
-              },
-              {
-                "name": "saledate",
-                "limit": 250
-              },
-              {
-                "name": "ts",
-                "limit": 250
-              }
-            ],
-            "Rows per Fetch": 250
-          },
-          "sourceType": "EDC2",
-          "textSearchEnabled": false,
-          "playbackMode": true,
-          "filters": [],
-          "sourceName": "Real Time Sales",
-          "aggregateFilters": [],
-          "live": true
-        },
-        "lastModified": 0,
-        "type": "RAW_DATA_TABLE",
-        "enabled": true
-      },
-      {
-        "ownerType": "SOURCE",
-        "ownerSourceId": "5c7e720d92d32b4b4d0c96d0",
-        "name": "Box Plot",
-        "id": "5c7e721192d32b4b4d0c96f7",
-        "visId": "5c7e71c392d32b4b4d0c956a",
-        "source": {
-          "sourceId": "5c7e720d92d32b4b4d0c96d0",
-          "variables": {
-            "Metric": {
-              "args": [
-                0,
-                25,
-                50,
-                75,
-                100
-              ],
-              "func": "percentiles",
-              "name": "price"
-            },
-            "Group By": {
-              "name": "usergender",
-              "limit": 10,
-              "sort": {
-                "name": "count",
-                "dir": "desc"
-              }
-            }
-          },
-          "sourceType": "EDC2",
-          "textSearchEnabled": false,
-          "playbackMode": true,
-          "filters": [],
-          "sourceName": "Real Time Sales",
-          "aggregateFilters": [],
-          "live": true
-        },
-        "lastModified": 0,
-        "type": "BOX_PLOT",
-        "enabled": true
-      },
-      {
-        "ownerType": "SOURCE",
-        "ownerSourceId": "5c7e720d92d32b4b4d0c96d0",
-        "name": "Word Cloud",
-        "id": "5c7e721192d32b4b4d0c96f5",
-        "visId": "5c7e71c392d32b4b4d0c9574",
-        "source": {
-          "sourceId": "5c7e720d92d32b4b4d0c96d0",
-          "variables": {
-            "Size": [
-              {
-                "name": "count"
-              }
-            ],
-            "Color": [
-              {
-                "colorConfig": {
-                  "autoShowColorLegend": true
-                },
-                "name": "count"
-              }
-            ],
-            "Group By": {
-              "name": "usergender",
-              "limit": 20,
-              "sort": {
-                "name": "count",
-                "dir": "desc"
-              }
-            }
-          },
-          "sourceType": "EDC2",
-          "textSearchEnabled": false,
-          "playbackMode": true,
-          "filters": [],
-          "sourceName": "Real Time Sales",
-          "aggregateFilters": [],
-          "live": true
-        },
-        "lastModified": 0,
-        "type": "WORD_CLOUD",
-        "enabled": true
-      },
-      {
-        "ownerType": "SOURCE",
-        "ownerSourceId": "5c7e720d92d32b4b4d0c96d0",
-        "name": "Tree Map",
-        "id": "5c7e721092d32b4b4d0c96f0",
-        "visId": "5c7e71c392d32b4b4d0c95a2",
-        "source": {
-          "sourceId": "5c7e720d92d32b4b4d0c96d0",
-          "variables": {
-            "Size": [
-              {
-                "name": "count"
-              }
-            ],
-            "Color": [
-              {
-                "colorConfig": {
-                  "autoShowColorLegend": true
-                },
-                "name": "count"
-              }
-            ],
-            "Group By": {
-              "name": "usergender",
-              "limit": 100,
-              "sort": {
-                "name": "count",
-                "dir": "desc"
-              }
-            }
-          },
-          "sourceType": "EDC2",
-          "textSearchEnabled": false,
-          "playbackMode": true,
-          "filters": [],
-          "sourceName": "Real Time Sales",
-          "aggregateFilters": [],
-          "live": true
-        },
-        "lastModified": 0,
-        "type": "TREE_MAP",
-        "enabled": true
-      },
-      {
-        "ownerType": "SOURCE",
-        "ownerSourceId": "5c7e720d92d32b4b4d0c96d0",
-        "name": "Scatter Plot",
-        "id": "5c7e721192d32b4b4d0c96f9",
-        "visId": "5c7e71c292d32b4b4d0c955d",
-        "source": {
-          "sourceId": "5c7e720d92d32b4b4d0c96d0",
-          "variables": {
-            "X Axis": [
-              {
-                "name": "count"
-              }
-            ],
-            "Size": [
-              {
-                "name": "count"
-              }
-            ],
-            "Y Axis": [
-              {
-                "name": "count"
-              }
-            ],
-            "Group By": {
-              "name": "usergender",
-              "limit": 20,
-              "sort": {
-                "name": "count",
-                "dir": "desc"
-              }
-            }
-          },
-          "sourceType": "EDC2",
-          "textSearchEnabled": false,
-          "playbackMode": true,
-          "filters": [],
-          "sourceName": "Real Time Sales",
-          "aggregateFilters": [],
-          "live": true
-        },
-        "lastModified": 0,
-        "type": "SCATTERPLOT",
-        "enabled": true
-      },
-      {
-        "ownerType": "SOURCE",
-        "ownerSourceId": "5c7e720d92d32b4b4d0c96d0",
-        "name": "Donut",
-        "id": "5c7e721092d32b4b4d0c96ec",
-        "visId": "5c7e71c392d32b4b4d0c95be",
-        "source": {
-          "sourceId": "5c7e720d92d32b4b4d0c96d0",
-          "variables": {
-            "Size": [
-              {
-                "name": "count"
-              }
-            ],
-            "Group By": {
-              "name": "usergender",
-              "limit": 10,
-              "sort": {
-                "name": "count",
-                "dir": "desc"
-              }
-            }
-          },
-          "sourceType": "EDC2",
-          "textSearchEnabled": false,
-          "playbackMode": true,
-          "filters": [],
-          "sourceName": "Real Time Sales",
-          "aggregateFilters": [],
-          "live": true
-        },
-        "lastModified": 0,
-        "type": "DONUT",
-        "enabled": true
-      },
-      {
-        "ownerType": "SOURCE",
-        "ownerSourceId": "5c7e720d92d32b4b4d0c96d0",
-        "name": "Heat Map",
-        "id": "5c7e721092d32b4b4d0c96ef",
-        "visId": "5c7e71c392d32b4b4d0c95a8",
-        "source": {
-          "sourceId": "5c7e720d92d32b4b4d0c96d0",
-          "variables": {
-            "Multi Group By": [
-              {
-                "name": "usergender",
-                "limit": 50,
-                "sort": {
-                  "name": "count",
-                  "dir": "desc"
-                }
-              },
-              {
-                "name": "usersentiment",
-                "limit": 20,
-                "sort": {
-                  "name": "count",
-                  "dir": "desc"
-                }
-              }
-            ],
-            "Color Metric": [
-              {
-                "colorConfig": {
-                  "autoShowColorLegend": true
-                },
-                "name": "count"
-              }
-            ],
-            "Show Metric Values": true
-          },
-          "sourceType": "EDC2",
-          "textSearchEnabled": false,
-          "playbackMode": true,
-          "filters": [],
-          "sourceName": "Real Time Sales",
-          "aggregateFilters": [],
-          "live": true
-        },
-        "lastModified": 0,
-        "type": "HEAT_MAP",
-        "enabled": true
-      },
-      {
-        "ownerType": "SOURCE",
-        "ownerSourceId": "5c7e720d92d32b4b4d0c96d0",
-        "name": "Pie",
-        "id": "5c7e721192d32b4b4d0c96f4",
-        "visId": "5c7e71c392d32b4b4d0c957a",
-        "source": {
-          "sourceId": "5c7e720d92d32b4b4d0c96d0",
-          "variables": {
-            "Size": [
-              {
-                "name": "count"
-              }
-            ],
-            "Group By": {
-              "name": "usergender",
-              "limit": 20,
-              "sort": {
-                "name": "count",
-                "dir": "desc"
-              }
-            }
-          },
-          "sourceType": "EDC2",
-          "textSearchEnabled": false,
-          "playbackMode": true,
-          "filters": [],
-          "sourceName": "Real Time Sales",
-          "aggregateFilters": [],
-          "live": true
-        },
-        "lastModified": 0,
-        "type": "PIE",
-        "enabled": true
-      },
-      {
-        "ownerType": "SOURCE",
-        "ownerSourceId": "5c7e720d92d32b4b4d0c96d0",
-        "name": "Bars",
-        "id": "5c7e721192d32b4b4d0c96f8",
-        "visId": "5c7e71c392d32b4b4d0c9564",
-        "source": {
-          "sourceId": "5c7e720d92d32b4b4d0c96d0",
-          "variables": {
-            "Multi Group By": [
-              {
-                "name": "usergender",
-                "limit": 50,
-                "sort": {
-                  "name": "count",
-                  "dir": "desc"
-                }
-              },
-              {
-                "name": "none",
-                "limit": 20,
-                "sort": {
-                  "name": "count",
-                  "dir": "desc"
-                }
-              }
-            ],
-            "Metric": [
-              {
-                "name": "count"
-              }
-            ],
-            "Bar Color": [
-              {
-                "colorConfig": {
-                  "colorNumb": 3,
-                  "autoShowColorLegend": true,
-                  "colorSet": "ZoomSequential",
-                  "colors": [
-                    {
-                      "color": "#ffc65f",
-                      "name": "Color 1"
-                    },
-                    {
-                      "color": "#9eb778",
-                      "name": "Color 2"
-                    },
-                    {
-                      "color": "#0096b6",
-                      "name": "Color 3"
-                    }
-                  ],
-                  "legendType": "palette"
-                },
-                "name": "count"
-              }
-            ]
-          },
-          "sourceType": "EDC2",
-          "textSearchEnabled": false,
-          "playbackMode": true,
-          "filters": [],
-          "sourceName": "Real Time Sales",
-          "aggregateFilters": [],
-          "live": true
-        },
-        "lastModified": 0,
-        "type": "UBER_BARS",
-        "enabled": true
-      },
-      {
-        "ownerType": "SOURCE",
-        "ownerSourceId": "5c7e720d92d32b4b4d0c96d0",
-        "name": "KPI",
-        "id": "5c7e721092d32b4b4d0c96eb",
-        "visId": "5c7e71c392d32b4b4d0c95cb",
-        "source": {
-          "sourceId": "5c7e720d92d32b4b4d0c96d0",
-          "variables": {
-            "Comparison Data Color": "#ffffff",
-            "Comparison Metric": [
-              {
-                "name": "none"
-              }
-            ],
-            "Label Color": "#ffffff",
-            "Up Arrow Color": "#68ad44",
-            "Background Color": "#585858",
-            "Data Color": "#d6df23",
-            "Metric": [
-              {
-                "name": "count"
-              }
-            ],
-            "Down Arrow Color": "#e46839"
-          },
-          "sourceType": "EDC2",
-          "textSearchEnabled": false,
-          "playbackMode": true,
-          "filters": [],
-          "sourceName": "Real Time Sales",
-          "aggregateFilters": [],
-          "live": true
-        },
-        "lastModified": 0,
-        "type": "KPI",
-        "enabled": true
-      },
-      {
-        "ownerType": "SOURCE",
-        "ownerSourceId": "5c7e720d92d32b4b4d0c96d0",
-        "name": "Line & Bars Trend",
-        "id": "5c7e721092d32b4b4d0c96ed",
-        "visId": "5c7e71c392d32b4b4d0c95b3",
-        "source": {
-          "sourceId": "5c7e720d92d32b4b4d0c96d0",
-          "variables": {
-            "Y1 Color": "#43a2ca",
-            "Y1 Axis": [
-              {
-                "name": "count"
-              }
-            ],
-            "Y2 Color": "#FF7F0E",
-            "Y2 Axis": [
-              {
-                "name": "count"
-              }
-            ],
-            "Trend Attribute": {
-              "name": "shipdate",
-              "limit": 1000,
-              "sort": {
-                "name": "shipdate",
-                "dir": "asc"
-              }
-            }
-          },
-          "sourceType": "EDC2",
-          "textSearchEnabled": false,
-          "playbackMode": true,
-          "filters": [],
-          "sourceName": "Real Time Sales",
-          "aggregateFilters": [],
-          "live": true
-        },
-        "lastModified": 0,
-        "type": "LINE_AND_BARS",
-        "enabled": true
-      },
-      {
-        "ownerType": "SOURCE",
-        "ownerSourceId": "5c7e720d92d32b4b4d0c96d0",
-        "name": "Line Trend: Attribute Values",
-        "id": "5c7e721092d32b4b4d0c96f1",
-        "visId": "5c7e71c392d32b4b4d0c958b",
-        "source": {
-          "sourceId": "5c7e720d92d32b4b4d0c96d0",
-          "variables": {
-            "Multi Group By": [
-              {
-                "name": "usergender",
-                "limit": 20,
-                "sort": {
-                  "name": "count",
-                  "dir": "desc"
-                }
-              },
-              {
-                "name": "shipdate",
-                "limit": 1000,
-                "sort": {
-                  "name": "shipdate",
-                  "dir": "asc"
-                }
-              }
-            ],
-            "Y Axis": [
-              {
-                "name": "count"
-              }
-            ]
-          },
-          "sourceType": "EDC2",
-          "textSearchEnabled": false,
-          "playbackMode": true,
-          "filters": [],
-          "sourceName": "Real Time Sales",
-          "aggregateFilters": [],
-          "live": true
-        },
-        "lastModified": 0,
-        "type": "LINE_CHART_CONTINUOUS",
-        "enabled": true
-      },
-      {
-        "ownerType": "SOURCE",
-        "ownerSourceId": "5c7e720d92d32b4b4d0c96d0",
-        "name": "Bars: Multiple Metrics",
-        "id": "5c7e721092d32b4b4d0c96ee",
-        "visId": "5c7e71c392d32b4b4d0c95ae",
-        "source": {
-          "sourceId": "5c7e720d92d32b4b4d0c96d0",
-          "variables": {
-            "Bar Height": [
-              {
-                "colorConfig": {
-                  "autoShowColorLegend": true
-                },
-                "name": "count"
-              }
-            ],
-            "Group By": {
-              "name": "usergender",
-              "limit": 20,
-              "sort": {
-                "name": "count",
-                "dir": "desc"
-              }
-            }
-          },
-          "sourceType": "EDC2",
-          "textSearchEnabled": false,
-          "playbackMode": true,
-          "filters": [],
-          "sourceName": "Real Time Sales",
-          "aggregateFilters": [],
-          "live": true
-        },
-        "lastModified": 0,
-        "type": "MULTI_METRIC_BARS",
-        "enabled": true
-      },
-      {
-        "ownerType": "SOURCE",
-        "ownerSourceId": "5c7e720d92d32b4b4d0c96d0",
-        "name": "Floating Bubbles",
-        "id": "5c7e721092d32b4b4d0c96ea",
-        "visId": "5c7e71c392d32b4b4d0c95da",
-        "source": {
-          "sourceId": "5c7e720d92d32b4b4d0c96d0",
-          "variables": {
-            "Multi Group By": [
-              {
-                "name": "usergender",
-                "limit": 50,
-                "sort": {
-                  "name": "count",
-                  "dir": "desc"
-                }
-              },
-              {
-                "name": "usersentiment",
-                "limit": 20,
-                "sort": {
-                  "name": "count",
-                  "dir": "desc"
-                }
-              }
-            ],
-            "Size": [
-              {
-                "name": "count"
-              }
-            ],
-            "Y Axis": [
-              {
-                "name": "count"
-              }
-            ]
-          },
-          "sourceType": "EDC2",
-          "textSearchEnabled": false,
-          "playbackMode": true,
-          "filters": [],
-          "sourceName": "Real Time Sales",
-          "aggregateFilters": [],
-          "live": true
-        },
-        "lastModified": 0,
-        "type": "FLOATING_BUBBLES",
-        "enabled": true
-      },
-      {
-        "ownerType": "SOURCE",
-        "ownerSourceId": "5c7e720d92d32b4b4d0c96d0",
-        "name": "Line Trend: Multiple Metrics",
-        "id": "5c7e721192d32b4b4d0c96f6",
-        "visId": "5c7e71c392d32b4b4d0c956f",
-        "source": {
-          "sourceId": "5c7e720d92d32b4b4d0c96d0",
-          "variables": {
-            "Y Axis": [
-              {
-                "colorConfig": {
-                  "autoShowColorLegend": true
-                },
-                "name": "count"
-              }
-            ],
-            "Trend Attribute": {
-              "name": "shipdate",
-              "limit": 1000,
-              "sort": {
-                "name": "shipdate",
-                "dir": "asc"
-              }
-            }
-          },
-          "sourceType": "EDC2",
-          "textSearchEnabled": false,
-          "playbackMode": true,
-          "filters": [],
-          "sourceName": "Real Time Sales",
-          "aggregateFilters": [],
-          "live": true
-        },
-        "lastModified": 0,
-        "type": "LINE_CHART",
-        "enabled": true
-      }
-    ],
-    "version": "ZOOMDATA-VERSION-PLACEHOLDER",
-    "connections": [
-      {
-        "connection": {
-          "createdByUserID": "5c7e71c292d32b4b4d0c9551",
-          "internal": false,
-          "lastModifiedDate": "2019-03-05 12:56:42.989",
-          "type": "EDC2",
-          "userId": "5c7e71c292d32b4b4d0c9551",
-          "subStorageType": "RTS",
-          "lastModifiedByUserID": "5c7e71c292d32b4b4d0c9551",
-          "createdDate": "2019-03-05 12:56:42.989",
-          "name": "RTS Connection",
-          "disabled": false,
-          "connectionTypeId": "5c7e720092d32b4b4d0c96bf",
-          "id": "5c7e720b92d32b4b4d0c96cf",
-          "parameters": {}
-        }
-      }
-    ]
-  },
-  "customVisualizations": []
+"bookmarks": [
+{
+"createdByUserID": "5ec3e951e8d967339b5a822a",
+"lastModifiedByUserID": "5ec3e951e8d967339b5a822a",
+"createdDate": "2020-05-19 14:52:44.612",
+"lastModifiedDate": "2020-05-19 14:52:44.612",
+"name": "RTS Sample Dashboard",
+"description": "This is a sample dashboard.",
+"layout": "4-column",
+"shareState": "VIEW_ONLY",
+"showDescription": false,
+"unifiedBarCfgs": [
+{
+"id": "5ec3f2bce8d967339b5a83c5",
+"timeControlCfg": {
+"from": "+$now_-1_hour",
+"to": "+$now",
+"timeField": "ts"
+},
+"playerControlCfg": {
+"timeWindowScale": "ROLLING",
+"pauseAfterRead": false,
+"speed": 1
+},
+"sharpeningCfg": {
+"prefer": false,
+"maxQueries": 10
+},
+"widgetIds": [
+"2b1a548cb588a569be1d6bc99cd86d45",
+"fa6b3f7bd5c2aba5b55a319020000eb7",
+"f0aab2a66479ce0292ead2ddcf48be5b",
+"6aadb776f13006259bd022cd20b49faa"
+]
+}
+],
+"selectedWidgetId": "fa6b3f7bd5c2aba5b55a319020000eb7",
+"fieldLinks": [],
+"rowFilters": [],
+"ownerName": "admin",
+"visualizations": [
+{
+"id": "5ec3f2bce8d967339b5a83ba",
+"visId": "5ec3e952e8d967339b5a823d",
+"ownerType": "DASHBOARD",
+"name": "Bars",
+"type": "UBER_BARS",
+"visualName": "Bars",
+"enabled": false,
+"widgetId": "fa6b3f7bd5c2aba5b55a319020000eb7",
+"layout": {
+"col": 1,
+"row": 7,
+"rowSpan": 6,
+"colSpan": 5
+},
+"source": {
+"variables": {
+"Multi Group By": [
+{
+"colorNumb": 10,
+"groupColorSet": "ZoomSequential",
+"groupColors": {},
+"limit": 10,
+"name": "category",
+"autoShowColorLegend": false,
+"sort": {
+"name": "count",
+"dir": "desc"
+},
+"label": "Product Category",
+"type": "ATTRIBUTE",
+"autoColor": true
+}
+],
+"Chart Name": "",
+"UberBarsSettings": {
+"showAbsoluteValues": false,
+"showGroupLabels": true,
+"thickness": "100",
+"showYGrid": true,
+"showXGrid": true,
+"chartType": "plain",
+"showRelativeValues": false,
+"chartOrientation": "vertical",
+"enableLogScale": false
+},
+"Metric": [
+{
+"name": "count"
+}
+],
+"Bar Color": [
+{
+"colorConfig": {
+"colorNumb": 3,
+"colorScaleType": "gradient",
+"autoShowColorLegend": false,
+"colorSet": "ZoomSequential",
+"autoColor": true,
+"colors": [
+{
+"color": "#ffc65f",
+"name": "Color 0"
+},
+{
+"color": "#9eb778",
+"name": "Color 1"
+},
+{
+"color": "#0096b6",
+"name": "Color 2"
+}
+],
+"legendType": "palette"
+},
+"func": "sum",
+"name": "price"
+}
+],
+"Chart Description": "",
+"Rulers": {
+"reflines": [],
+"axis": [
+{
+"logScaleEnabled": false,
+"stepAuto": true,
+"metricsName": "Volume",
+"toAuto": true,
+"name": "Metric",
+"from": 0,
+"step": 20,
+"to": 100,
+"axis": "Metric",
+"type": "yAxis",
+"fromAuto": true
+}
+],
+"gridlines": {
+"X1grid": false,
+"X2grid": false,
+"Y1grid": true,
+"Y2grid": false
+}
+},
+"Font": {
+"barLabels": {
+"size": "normal",
+"style": "",
+"align": "left",
+"typeface": "sans"
+},
+"title": {
+"size": "normal",
+"style": "",
+"align": "left",
+"typeface": "sans"
+}
+}
+},
+"filters": [],
+"aggregateFilters": [],
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"sourceType": "EDC2",
+"live": false,
+"sourceName": "Real Time Sales",
+"accountId": "5ec3e951e8d967339b5a8229",
+"playbackMode": false,
+"textSearchEnabled": false
+},
+"controlsCfg": {
+"id": "5ec3f2bce8d967339b5a83bb",
+"timeControlCfg": {
+"from": "+$now_-1_hour",
+"to": "+$now",
+"timeField": "ts"
+},
+"playerControlCfg": {
+"timeWindowScale": "ROLLING",
+"pauseAfterRead": false,
+"speed": 1
+},
+"sharpeningCfg": {
+"prefer": false,
+"maxQueries": 10
+}
+},
+"lastModified": 0
+},
+{
+"id": "5ec3f2bce8d967339b5a83c2",
+"visId": "5ec3e952e8d967339b5a8248",
+"ownerType": "DASHBOARD",
+"name": "Line Trend: Multiple Metrics",
+"type": "LINE_CHART",
+"visualName": "Line Trend: Multiple Metrics",
+"enabled": false,
+"widgetId": "f0aab2a66479ce0292ead2ddcf481342",
+"layout": {
+"col": 6,
+"row": 7,
+"rowSpan": 6,
+"colSpan": 6
+},
+"source": {
+"variables": {
+"date": "ts",
+"Y Color": [
+{
+"colorConfig": {
+"colorNumb": 4,
+"savedColors": [
+{
+"color": "#d7191c",
+"name": "usersentiment",
+"label": "Product Satisfaction"
+},
+{
+"color": "#fdae61",
+"name": "count",
+"label": "Volume"
+},
+{
+"color": "#a6d96a",
+"name": "price",
+"label": "Actual Sales"
+},
+{
+"color": "#1a9641",
+"name": "plannedsales",
+"label": "Planned Sales"
+}
+],
+"autoShowColorLegend": false,
+"colorSet": "RdYlGn",
+"colorLegendPosition": {
+"top": 0,
+"left": "auto",
+"bottom": "auto",
+"right": 8.3125
+},
+"legendType": "palette"
+},
+"name": "count"
+}
+],
+"Chart Name": "",
+"Y Axis": [
+{
+"colorConfig": {
+"autoShowColorLegend": false
+},
+"func": "sum",
+"name": "price"
+},
+{
+"colorConfig": {
+"autoShowColorLegend": false
+},
+"func": "sum",
+"name": "plannedsales"
+}
+],
+"Chart Description": "",
+"Rulers": {
+"reflines": [],
+"axis": [
+{
+"logScaleEnabled": false,
+"stepAuto": true,
+"metricsName": "Actual Sales",
+"toAuto": true,
+"name": "Y Axis",
+"from": "0.00",
+"step": 500000,
+"to": "2500000.00",
+"axis": "Y Axis",
+"type": "yAxis",
+"fromAuto": true
+}
+],
+"gridlines": {
+"X1grid": false,
+"X2grid": false,
+"Y1grid": true,
+"Y2grid": false
+}
+},
+"Trend Attribute": {
+"name": "ts",
+"limit": 1000,
+"sort": {
+"name": "ts",
+"dir": "asc"
+}
+}
+},
+"filters": [],
+"aggregateFilters": [],
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"sourceType": "EDC2",
+"live": false,
+"sourceName": "Real Time Sales",
+"accountId": "5ec3e951e8d967339b5a8229",
+"playbackMode": false,
+"textSearchEnabled": false
+},
+"controlsCfg": {
+"id": "5ec3f2bce8d967339b5a83c3",
+"timeControlCfg": {
+"from": "+$start_of_data",
+"to": "+$end_of_data",
+"timeField": "ts"
+},
+"playerControlCfg": {
+"timeWindowScale": "PINNED",
+"pauseAfterRead": false,
+"speed": 1
+},
+"sharpeningCfg": {
+"prefer": false,
+"maxQueries": 10
+}
+},
+"lastModified": 0
+},
+{
+"id": "5ec3f2bce8d967339b5a83c0",
+"visId": "5ec3e952e8d967339b5a8236",
+"ownerType": "DASHBOARD",
+"name": "Scatter Plot",
+"type": "SCATTERPLOT",
+"visualName": "Scatter Plot",
+"enabled": false,
+"widgetId": "6aadb776f13006259bd022cd20b49faa",
+"layout": {
+"col": 5,
+"row": 1,
+"rowSpan": 6,
+"colSpan": 12
+},
+"source": {
+"variables": {
+"X Axis": [
+{
+"func": "sum",
+"name": "price"
+}
+],
+"Chart Name": "",
+"Size": [
+{
+"name": "count"
+}
+],
+"Y Axis": [
+{
+"func": "avg",
+"name": "usersentiment"
+}
+],
+"Chart Description": "",
+"Rulers": {
+"reflines": [],
+"axis": [
+{
+"logScaleEnabled": false,
+"stepAuto": false,
+"metricsName": "Actual Sales",
+"toAuto": false,
+"name": "X Axis",
+"from": 0,
+"step": 10000,
+"to": "40000",
+"axis": "X Axis",
+"type": "xAxis",
+"fromAuto": false
+},
+{
+"logScaleEnabled": false,
+"stepAuto": false,
+"metricsName": "Product Satisfaction",
+"toAuto": false,
+"name": "Y Axis",
+"from": "-0.75",
+"step": 0.25,
+"to": "0.75",
+"axis": "Y Axis",
+"type": "yAxis",
+"fromAuto": false
+}
+],
+"gridlines": {
+"X1grid": true,
+"X2grid": false,
+"Y1grid": true,
+"Y2grid": false
+}
+},
+"Font": {
+"title": {
+"size": "normal",
+"style": "",
+"align": "left",
+"typeface": "sans"
+}
+},
+"Group By": {
+"groupColorSet": "ZoomPalette",
+"name": "sku",
+"limit": 100,
+"autoShowColorLegend": false,
+"sort": {
+"metricFunc": "avg",
+"name": "price",
+"dir": "desc"
+},
+"autoColor": false
+}
+},
+"filters": [],
+"aggregateFilters": [],
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"sourceType": "EDC2",
+"live": false,
+"sourceName": "Real Time Sales",
+"accountId": "5ec3e951e8d967339b5a8229",
+"playbackMode": false,
+"textSearchEnabled": false
+},
+"controlsCfg": {
+"id": "5ec3f2bce8d967339b5a83c1",
+"timeControlCfg": {
+"from": "+$now_-1_hour",
+"to": "+$now",
+"timeField": "ts"
+},
+"playerControlCfg": {
+"timeWindowScale": "ROLLING",
+"pauseAfterRead": false,
+"speed": 1
+},
+"sharpeningCfg": {
+"prefer": false,
+"maxQueries": 10
+}
+},
+"lastModified": 0
+},
+{
+"id": "5ec3f2bce8d967339b5a83bc",
+"visId": "5ec3e952e8d967339b5a8253",
+"ownerType": "DASHBOARD",
+"name": "Pie",
+"type": "PIE",
+"visualName": "Pie",
+"enabled": false,
+"widgetId": "f0aab2a66479ce0292ead2ddcf48be5b",
+"layout": {
+"col": 1,
+"row": 1,
+"rowSpan": 6,
+"colSpan": 4
+},
+"source": {
+"variables": {
+"Chart Name": "",
+"Size": [
+{
+"name": "count"
+}
+],
+"Chart Description": "",
+"Group By": {
+"groupColorSet": "ZoomPalette",
+"name": "group",
+"limit": 10,
+"autoShowColorLegend": false,
+"sort": {
+"name": "count",
+"dir": "desc"
+},
+"autoColor": false
+}
+},
+"filters": [],
+"aggregateFilters": [],
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"sourceType": "EDC2",
+"live": false,
+"sourceName": "Real Time Sales",
+"accountId": "5ec3e951e8d967339b5a8229",
+"playbackMode": false,
+"textSearchEnabled": false
+},
+"controlsCfg": {
+"id": "5ec3f2bce8d967339b5a83bd",
+"timeControlCfg": {
+"from": "+$now_-1_hour",
+"to": "+$now",
+"timeField": "ts"
+},
+"playerControlCfg": {
+"timeWindowScale": "ROLLING",
+"pauseAfterRead": false,
+"speed": 1
+},
+"sharpeningCfg": {
+"prefer": false,
+"maxQueries": 10
+}
+},
+"lastModified": 0
+},
+{
+"id": "5ec3f2bce8d967339b5a83be",
+"visId": "5ec3e952e8d967339b5a8258",
+"ownerType": "DASHBOARD",
+"name": "Pivot Table",
+"type": "PIVOT_TABLE",
+"visualName": "Pivot Table",
+"enabled": false,
+"widgetId": "2b1a548cb588a569be1d6bc99cd86d45",
+"layout": {
+"col": 12,
+"row": 7,
+"rowSpan": 6,
+"colSpan": 5
+},
+"source": {
+"variables": {
+"Total Sorting": [
+{
+"name": "count",
+"filters": [
+{
+"aggregation": {
+"field": {
+"name": "usergender"
+},
+"type": "TERMS"
+},
+"value": ""
+}
+],
+"dir": "desc",
+"cell": {
+"container": "RIGHT_TABLE_HEADER",
+"colKey": "RIGHT0",
+"data": {
+"name": "count",
+"label": "Volume",
+"type": "NUMBER"
+},
+"isResize": true,
+"isTotal": true,
+"isMetric": true,
+"colWidth": 84.41995,
+"isSortable": true,
+"drawOpt": {
+"border": true,
+"bg": true,
+"text": {
+"horizontal": {
+"left": true,
+"center": false,
+"right": false
+},
+"vertical": {
+"middle": true,
+"top": false,
+"bottom": false
+}
+}
+},
+"title": "Volume",
+"type": "th",
+"colspan": 1,
+"path": "",
+"pos": {
+"y1": 36,
+"x1": 313.58005,
+"y2": 72,
+"x2": 398
+},
+"rowspan": 1,
+"rowIdx": 1,
+"resizeCfg": {
+"colKey": "RIGHT0",
+"metricInfo": {
+"name": "count",
+"label": "Volume",
+"type": "NUMBER"
+}
+},
+"height": 36,
+"isLabel": true,
+"colIdx": 0,
+"labelCfg": {
+"isHovered": false
+},
+"textWidth": 43.419952,
+"hoverDirection": "COL",
+"odd": true,
+"sortCfg": {
+"state": true,
+"dir": "desc"
+},
+"even": false,
+"name": "count"
+}
+}
+],
+"Row Sorting": [],
+"Chart Description": "",
+"Column Sorting": [
+{
+"name": "usergender",
+"dir": "asc",
+"cell": {
+"container": "LEFT_TABLE_HEADER",
+"isLabel": true,
+"colIdx": 1,
+"data": {
+"sourceId": "57d823bcef8699595c0c127f",
+"refreshable": false,
+"checkedByDefault": true,
+"visible": true,
+"storageConfig": {
+"originalName": "USERGENDER",
+"min": 4,
+"originalType": "ATTRIBUTE",
+"max": 6,
+"rawFormat": {
+"RAW_TYPE": "VARCHAR",
+"RAW_TYPE_CODE": "12"
+},
+"metaFlags": [],
+"cardinality": 2
+},
+"effectiveMax": 6,
+"label": "Usergender",
+"rawFormatSupportTimeGroup": false,
+"type": "ATTRIBUTE",
+"parentField": false,
+"effectiveMin": 4,
+"distinctCount": false,
+"customListValuesOnly": false,
+"name": "usergender",
+"facet": false,
+"fieldId": "57d823bcef8699595c0c1285"
+},
+"isResize": true,
+"labelCfg": {
+"isHovered": false
+},
+"isMetric": false,
+"colWidth": 10,
+"isSortable": true,
+"drawOpt": {
+"border": true,
+"bg": true,
+"text": {
+"horizontal": {
+"left": true,
+"center": false,
+"right": false
+},
+"vertical": {
+"middle": true,
+"top": false,
+"bottom": false
+}
+}
+},
+"textWidth": 66.780914,
+"title": "Usergender",
+"type": "th",
+"hoverDirection": "ROW",
+"colspan": 1,
+"sortCfg": {
+"name": "usergender",
+"state": true,
+"dir": "asc"
+},
+"isColumnAttribute": true,
+"pos": {
+"y1": 0,
+"x1": 10,
+"y2": 36,
+"x2": 20
+},
+"isAttribute": true,
+"rowspan": 1,
+"rowIdx": 0,
+"resizeCfg": {
+"colKey": "LEFT1",
+"metricInfo": {}
+},
+"height": 36
+}
+}
+],
+"Font": {
+"title": {
+"size": "normal",
+"style": "",
+"align": "left",
+"typeface": "sans"
+}
+},
+"Metric Sorting": [],
+"Pagination": {
+"pagesCount": 1,
+"index": 0,
+"precise": true
+},
+"Metrics": [
+{
+"name": "count"
+}
+],
+"Chart Name": "",
+"Column Attributes": [
+{
+"name": "usergender"
+}
+],
+"Metric Direction": "Columns",
+"Row Attributes": [
+{
+"name": "userincome"
+}
+],
+"Rows per Page": 200,
+"Column Sizes": {
+"LEFT1": 80,
+"Femalecount": 84.41995,
+"Malecount": 80.41995
+}
+},
+"filters": [],
+"aggregateFilters": [],
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"sourceType": "EDC2",
+"live": false,
+"sourceName": "Real Time Sales",
+"accountId": "5ec3e951e8d967339b5a8229",
+"playbackMode": false,
+"textSearchEnabled": false
+},
+"controlsCfg": {
+"id": "5ec3f2bce8d967339b5a83bf",
+"timeControlCfg": {
+"from": "+$now_-1_hour",
+"to": "+$now",
+"timeField": "ts"
+},
+"playerControlCfg": {
+"timeWindowScale": "ROLLING",
+"pauseAfterRead": false,
+"speed": 1
+},
+"sharpeningCfg": {
+"prefer": false,
+"maxQueries": 10
+}
+},
+"lastModified": 0
+}
+]
+}
+],
+"sources": {
+"sources": [
+{
+"createdByUserID": "5ec3e951e8d967339b5a822a",
+"lastModifiedByUserID": "5ec3e951e8d967339b5a822a",
+"createdDate": "2020-05-19 14:52:44.145",
+"lastModifiedDate": "2020-05-19 14:52:45.801",
+"id": "5ec3f2bce8d967339b5a838e",
+"name": "Real Time Sales",
+"accountId": "5ec3e951e8d967339b5a8229",
+"live": false,
+"liveRefreshRate": 1,
+"delay": 1,
+"delayUnit": "SECONDS",
+"playbackMode": false,
+"startSpeed": 0,
+"textSearchEnabled": false,
+"enabled": true,
+"type": "EDC2",
+"subStorageType": "RTS",
+"cacheable": true,
+"cacheAttributeValues": true,
+"queryStrategy": "LOAD_ALL",
+"hardLimit": 100000,
+"storageConfiguration": {
+"connectionId": "5ec3f2bbe8d967339b5a838d",
+"collection": "RTS",
+"schema": "PUBLIC",
+"collectionParams": {},
+"parameters": {},
+"partitions": {}
+},
+"linkedSources": [],
+"fusedAttributes": [],
+"objectFields": [
+{
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"label": "Group",
+"name": "group",
+"storageConfig": {
+"originalName": "GROUP",
+"min": 3,
+"max": 11,
+"cardinality": 5,
+"rawFormat": {
+"RAW_TYPE_CODE": "12"
+},
+"metaFlags": [],
+"originalType": "ATTRIBUTE"
+},
+"visible": true,
+"checkedByDefault": true,
+"customListValuesOnly": false,
+"type": "ATTRIBUTE",
+"facet": false,
+"facetOrder": 0,
+"distinctCount": false,
+"rawFormatSupportTimeGroup": false,
+"refreshable": false,
+"parentField": false,
+"effectiveMin": 3,
+"effectiveMax": 11,
+"fieldId": "5ec3f2bce8d967339b5a8390"
+},
+{
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"label": "Category",
+"name": "category",
+"storageConfig": {
+"originalName": "CATEGORY",
+"min": 4,
+"max": 15,
+"cardinality": 46,
+"rawFormat": {
+"RAW_TYPE_CODE": "12"
+},
+"metaFlags": [],
+"originalType": "ATTRIBUTE"
+},
+"visible": true,
+"checkedByDefault": true,
+"customListValuesOnly": false,
+"type": "ATTRIBUTE",
+"facet": false,
+"facetOrder": 0,
+"distinctCount": false,
+"rawFormatSupportTimeGroup": false,
+"refreshable": false,
+"parentField": false,
+"effectiveMin": 4,
+"effectiveMax": 15,
+"fieldId": "5ec3f2bce8d967339b5a8391"
+},
+{
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"label": "Sku",
+"name": "sku",
+"storageConfig": {
+"originalName": "SKU",
+"min": 8,
+"max": 8,
+"cardinality": 446,
+"rawFormat": {
+"RAW_TYPE_CODE": "12"
+},
+"metaFlags": [],
+"originalType": "ATTRIBUTE"
+},
+"visible": true,
+"checkedByDefault": true,
+"customListValuesOnly": false,
+"type": "ATTRIBUTE",
+"facet": false,
+"facetOrder": 0,
+"distinctCount": false,
+"rawFormatSupportTimeGroup": false,
+"refreshable": false,
+"parentField": false,
+"effectiveMin": 8,
+"effectiveMax": 8,
+"fieldId": "5ec3f2bce8d967339b5a8392"
+},
+{
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"label": "Usercity",
+"name": "usercity",
+"storageConfig": {
+"originalName": "USERCITY",
+"min": 3,
+"max": 22,
+"cardinality": 485,
+"rawFormat": {
+"RAW_TYPE_CODE": "12"
+},
+"metaFlags": [],
+"originalType": "ATTRIBUTE"
+},
+"visible": true,
+"checkedByDefault": true,
+"customListValuesOnly": false,
+"type": "ATTRIBUTE",
+"facet": false,
+"facetOrder": 0,
+"distinctCount": false,
+"rawFormatSupportTimeGroup": false,
+"refreshable": false,
+"parentField": false,
+"effectiveMin": 3,
+"effectiveMax": 22,
+"fieldId": "5ec3f2bce8d967339b5a8393"
+},
+{
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"label": "Userstate",
+"name": "userstate",
+"storageConfig": {
+"originalName": "USERSTATE",
+"min": 4,
+"max": 20,
+"cardinality": 50,
+"rawFormat": {
+"RAW_TYPE_CODE": "12"
+},
+"metaFlags": [],
+"originalType": "ATTRIBUTE"
+},
+"visible": true,
+"checkedByDefault": true,
+"customListValuesOnly": false,
+"type": "ATTRIBUTE",
+"facet": false,
+"facetOrder": 0,
+"distinctCount": false,
+"rawFormatSupportTimeGroup": false,
+"refreshable": false,
+"parentField": false,
+"effectiveMin": 4,
+"effectiveMax": 20,
+"fieldId": "5ec3f2bce8d967339b5a8394"
+},
+{
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"label": "Usergender",
+"name": "usergender",
+"storageConfig": {
+"originalName": "USERGENDER",
+"min": 4,
+"max": 6,
+"cardinality": 2,
+"rawFormat": {
+"RAW_TYPE_CODE": "12"
+},
+"metaFlags": [],
+"originalType": "ATTRIBUTE"
+},
+"visible": true,
+"checkedByDefault": true,
+"customListValuesOnly": false,
+"type": "ATTRIBUTE",
+"facet": false,
+"facetOrder": 0,
+"distinctCount": false,
+"rawFormatSupportTimeGroup": false,
+"refreshable": false,
+"parentField": false,
+"effectiveMin": 4,
+"effectiveMax": 6,
+"fieldId": "5ec3f2bce8d967339b5a8395"
+},
+{
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"label": "Userincome",
+"name": "userincome",
+"storageConfig": {
+"originalName": "USERINCOME",
+"min": 13,
+"max": 19,
+"cardinality": 5,
+"rawFormat": {
+"RAW_TYPE_CODE": "12"
+},
+"metaFlags": [],
+"originalType": "ATTRIBUTE"
+},
+"visible": true,
+"checkedByDefault": true,
+"customListValuesOnly": false,
+"type": "ATTRIBUTE",
+"facet": false,
+"facetOrder": 0,
+"distinctCount": false,
+"rawFormatSupportTimeGroup": false,
+"refreshable": false,
+"parentField": false,
+"effectiveMin": 13,
+"effectiveMax": 19,
+"fieldId": "5ec3f2bce8d967339b5a8396"
+},
+{
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"label": "Price",
+"name": "price",
+"storageConfig": {
+"originalName": "PRICE",
+"min": 5,
+"max": 4886,
+"cardinality": 473,
+"rawFormat": {
+"RAW_TYPE_CODE": "8"
+},
+"metaFlags": [],
+"originalType": "NUMBER"
+},
+"visible": true,
+"func": "SUM",
+"checkedByDefault": true,
+"customListValuesOnly": false,
+"type": "NUMBER",
+"facet": false,
+"facetOrder": 0,
+"distinctCount": false,
+"rawFormatSupportTimeGroup": false,
+"refreshable": false,
+"parentField": false,
+"numberFieldFormat": {
+"id": "5ec3f2bce8d967339b5a8398",
+"type": "PLAIN",
+"decimals": 2,
+"separator": true,
+"negative": "SIGNED",
+"standardUnit": "NONE"
+},
+"effectiveMin": 5,
+"effectiveMax": 4886,
+"fieldId": "5ec3f2bce8d967339b5a8397"
+},
+{
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"label": "Plannedsales",
+"name": "plannedsales",
+"storageConfig": {
+"originalName": "PLANNEDSALES",
+"min": 3.96,
+"max": 2276.921,
+"cardinality": 337,
+"rawFormat": {
+"RAW_TYPE_CODE": "8"
+},
+"metaFlags": [],
+"originalType": "NUMBER"
+},
+"visible": true,
+"func": "SUM",
+"checkedByDefault": true,
+"customListValuesOnly": false,
+"type": "NUMBER",
+"facet": false,
+"facetOrder": 0,
+"distinctCount": false,
+"rawFormatSupportTimeGroup": false,
+"refreshable": false,
+"parentField": false,
+"numberFieldFormat": {
+"id": "5ec3f2bce8d967339b5a839a",
+"type": "PLAIN",
+"decimals": 2,
+"separator": true,
+"negative": "SIGNED",
+"standardUnit": "NONE"
+},
+"effectiveMin": 3.96,
+"effectiveMax": 2276.921,
+"fieldId": "5ec3f2bce8d967339b5a8399"
+},
+{
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"label": "Usersentiment",
+"name": "usersentiment",
+"storageConfig": {
+"originalName": "USERSENTIMENT",
+"min": -1,
+"max": 1,
+"cardinality": 3,
+"rawFormat": {
+"RAW_TYPE_CODE": "4"
+},
+"metaFlags": [],
+"originalType": "INTEGER"
+},
+"visible": true,
+"func": "SUM",
+"checkedByDefault": true,
+"customListValuesOnly": false,
+"type": "INTEGER",
+"facet": false,
+"facetOrder": 0,
+"distinctCount": false,
+"rawFormatSupportTimeGroup": false,
+"refreshable": false,
+"parentField": false,
+"numberFieldFormat": {
+"id": "5ec3f2bce8d967339b5a839c",
+"type": "PLAIN",
+"decimals": 2,
+"separator": true,
+"negative": "SIGNED",
+"standardUnit": "NONE"
+},
+"effectiveMin": -1,
+"effectiveMax": 1,
+"fieldId": "5ec3f2bce8d967339b5a839b"
+},
+{
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"label": "Zipcode",
+"name": "zipcode",
+"storageConfig": {
+"originalName": "ZIPCODE",
+"min": 5,
+"max": 5,
+"cardinality": 988,
+"rawFormat": {
+"RAW_TYPE_CODE": "12"
+},
+"metaFlags": [],
+"originalType": "ATTRIBUTE"
+},
+"visible": true,
+"checkedByDefault": true,
+"customListValuesOnly": false,
+"type": "ATTRIBUTE",
+"facet": false,
+"facetOrder": 0,
+"distinctCount": false,
+"rawFormatSupportTimeGroup": false,
+"refreshable": false,
+"parentField": false,
+"effectiveMin": 5,
+"effectiveMax": 5,
+"fieldId": "5ec3f2bce8d967339b5a839d"
+},
+{
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"label": "County",
+"name": "county",
+"storageConfig": {
+"originalName": "COUNTY",
+"min": 3,
+"max": 20,
+"cardinality": 437,
+"rawFormat": {
+"RAW_TYPE_CODE": "12"
+},
+"metaFlags": [],
+"originalType": "ATTRIBUTE"
+},
+"visible": true,
+"checkedByDefault": true,
+"customListValuesOnly": false,
+"type": "ATTRIBUTE",
+"facet": false,
+"facetOrder": 0,
+"distinctCount": false,
+"rawFormatSupportTimeGroup": false,
+"refreshable": false,
+"parentField": false,
+"effectiveMin": 3,
+"effectiveMax": 20,
+"fieldId": "5ec3f2bce8d967339b5a839e"
+},
+{
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"label": "Countycode",
+"name": "countycode",
+"storageConfig": {
+"originalName": "COUNTYCODE",
+"min": 5,
+"max": 5,
+"cardinality": 519,
+"rawFormat": {
+"RAW_TYPE_CODE": "12"
+},
+"metaFlags": [],
+"originalType": "ATTRIBUTE"
+},
+"visible": true,
+"checkedByDefault": true,
+"customListValuesOnly": false,
+"type": "ATTRIBUTE",
+"facet": false,
+"facetOrder": 0,
+"distinctCount": false,
+"rawFormatSupportTimeGroup": false,
+"refreshable": false,
+"parentField": false,
+"effectiveMin": 5,
+"effectiveMax": 5,
+"fieldId": "5ec3f2bce8d967339b5a839f"
+},
+{
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"label": "Shipdate",
+"name": "shipdate",
+"storageConfig": {
+"originalName": "SHIPDATE",
+"min": 1551877011000,
+"max": 1551963411001,
+"cardinality": 0,
+"rawFormat": {
+"RAW_TYPE_CODE": "93"
+},
+"metaFlags": [],
+"originalType": "TIME"
+},
+"visible": true,
+"checkedByDefault": true,
+"timestampGranularity": "SECOND",
+"customListValuesOnly": false,
+"type": "TIME",
+"facet": false,
+"facetOrder": 0,
+"distinctCount": false,
+"timestampFormat": "DEFAULT",
+"timeZoneId": "UTC",
+"rawFormatSupportTimeGroup": true,
+"refreshable": true,
+"timeZoneLabel": "UTC",
+"parentField": false,
+"effectiveMin": 1551877011000,
+"effectiveMax": 1551963411001,
+"fieldId": "5ec3f2bce8d967339b5a83a0"
+},
+{
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"label": "Saledate",
+"name": "saledate",
+"storageConfig": {
+"originalName": "SALEDATE",
+"min": 1551790611000,
+"max": 1551877011001,
+"cardinality": 0,
+"rawFormat": {
+"RAW_TYPE_CODE": "93"
+},
+"metaFlags": [],
+"originalType": "TIME"
+},
+"visible": true,
+"checkedByDefault": true,
+"timestampGranularity": "SECOND",
+"customListValuesOnly": false,
+"type": "TIME",
+"facet": false,
+"facetOrder": 0,
+"distinctCount": false,
+"timestampFormat": "DEFAULT",
+"timeZoneId": "UTC",
+"rawFormatSupportTimeGroup": true,
+"refreshable": true,
+"timeZoneLabel": "UTC",
+"parentField": false,
+"effectiveMin": 1551790611000,
+"effectiveMax": 1551877011001,
+"fieldId": "5ec3f2bce8d967339b5a83a1"
+},
+{
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"label": "Ts",
+"name": "ts",
+"storageConfig": {
+"originalName": "TS",
+"min": 1551704211000,
+"max": 1551790611001,
+"cardinality": 0,
+"rawFormat": {
+"RAW_TYPE_CODE": "93"
+},
+"metaFlags": [
+"PLAYABLE"
+],
+"originalType": "TIME"
+},
+"visible": true,
+"checkedByDefault": true,
+"timestampGranularity": "SECOND",
+"customListValuesOnly": false,
+"type": "TIME",
+"facet": false,
+"facetOrder": 0,
+"distinctCount": false,
+"timestampFormat": "DEFAULT",
+"timeZoneId": "UTC",
+"rawFormatSupportTimeGroup": true,
+"refreshable": true,
+"timeZoneLabel": "UTC",
+"parentField": false,
+"effectiveMin": 1551704211000,
+"effectiveMax": 1551790611001,
+"fieldId": "5ec3f2bce8d967339b5a83a2"
+}
+],
+"derivedFields": [],
+"volumeMetric": {
+"label": "Volume",
+"visible": true,
+"name": "count"
+},
+"controlsCfg": null,
+"version": 2,
+"fusedJoinTypes": [
+"INNER",
+"LEFT",
+"FULL_OUTER"
+],
+"creatingUserName": "admin",
+"delayMillis": 1000
+}
+],
+"connections": [
+{
+"connection": {
+"createdByUserID": "5ec3e951e8d967339b5a822a",
+"lastModifiedByUserID": "5ec3e951e8d967339b5a822a",
+"createdDate": "2020-05-19 14:52:43.718",
+"lastModifiedDate": "2020-05-19 14:52:43.718",
+"id": "5ec3f2bbe8d967339b5a838d",
+"name": "RTS Connection",
+"type": "EDC2",
+"internal": false,
+"userId": "5ec3e951e8d967339b5a822a",
+"creatingUserName": "admin",
+"disabled": false,
+"connectionTypeId": "5ec3eab6e8d967339b5a835b",
+"subStorageType": "RTS",
+"features": [],
+"parameters": {},
+"allParameters": []
+}
+}
+],
+"visualizations": [
+{
+"id": "5ec3e953e8d967339b5a828c",
+"type": "LINE_AND_BARS",
+"name": "Line & Bars Trend"
+},
+{
+"id": "5ec3e952e8d967339b5a824d",
+"type": "WORD_CLOUD",
+"name": "Word Cloud"
+},
+{
+"id": "5ec3e952e8d967339b5a8260",
+"type": "RAW_DATA_TABLE",
+"name": "Raw Data Table"
+},
+{
+"id": "5ec3e952e8d967339b5a8287",
+"type": "MULTI_METRIC_BARS",
+"name": "Bars: Multiple Metrics"
+},
+{
+"id": "5ec3e953e8d967339b5a8297",
+"type": "DONUT",
+"name": "Donut"
+},
+{
+"id": "5ec3e952e8d967339b5a8253",
+"type": "PIE",
+"name": "Pie"
+},
+{
+"id": "5ec3e952e8d967339b5a827b",
+"type": "TREE_MAP",
+"name": "Tree Map"
+},
+{
+"id": "5ec3e952e8d967339b5a8264",
+"type": "LINE_CHART_CONTINUOUS",
+"name": "Line Trend: Attribute Values"
+},
+{
+"id": "5ec3e952e8d967339b5a8230",
+"type": "BUBBLES",
+"name": "Packed Bubbles"
+},
+{
+"id": "5ec3e952e8d967339b5a8236",
+"type": "SCATTERPLOT",
+"name": "Scatter Plot"
+},
+{
+"id": "5ec3e952e8d967339b5a8281",
+"type": "HEAT_MAP",
+"name": "Heat Map"
+},
+{
+"id": "5ec3e952e8d967339b5a823d",
+"type": "UBER_BARS",
+"name": "Bars"
+},
+{
+"id": "5ec3e952e8d967339b5a8248",
+"type": "LINE_CHART",
+"name": "Line Trend: Multiple Metrics"
+},
+{
+"id": "5ec3e952e8d967339b5a8243",
+"type": "BOX_PLOT",
+"name": "Box Plot"
+},
+{
+"id": "5ec3e953e8d967339b5a82a4",
+"type": "KPI",
+"name": "KPI"
+},
+{
+"id": "5ec3e953e8d967339b5a82b3",
+"type": "FLOATING_BUBBLES",
+"name": "Floating Bubbles"
+},
+{
+"id": "5ec3e952e8d967339b5a8258",
+"type": "PIVOT_TABLE",
+"name": "Pivot Table"
+},
+{
+"id": "5ec3e953e8d967339b5a82b9",
+"type": "HISTOGRAM",
+"name": "Bars: Histogram"
+}
+],
+"visualizationDefs": [
+{
+"createdByUserID": "5ec3e951e8d967339b5a822a",
+"lastModifiedByUserID": "5ec3e951e8d967339b5a822a",
+"createdDate": "2020-05-19 14:52:44.355",
+"lastModifiedDate": "2020-05-19 14:52:45.907",
+"id": "5ec3f2bce8d967339b5a83b3",
+"visId": "5ec3e953e8d967339b5a828c",
+"accountId": "5ec3e951e8d967339b5a8229",
+"ownerType": "SOURCE",
+"name": "Line & Bars Trend",
+"type": "LINE_AND_BARS",
+"visualName": "Line & Bars Trend",
+"defaultTitle": "Line & Bars Trend",
+"enabled": true,
+"source": {
+"variables": {
+"Y1 Color": "#43a2ca",
+"Y1 Axis": [
+{
+"name": "count"
+}
+],
+"Y2 Color": "#FF7F0E",
+"Y2 Axis": [
+{
+"name": "count"
+}
+],
+"Trend Attribute": {
+"name": "shipdate",
+"limit": 1000,
+"sort": {
+"name": "shipdate",
+"dir": "asc"
+}
+}
+},
+"filters": [],
+"aggregateFilters": [],
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"sourceType": "EDC2",
+"live": false,
+"sourceName": "Real Time Sales",
+"accountId": "5ec3e951e8d967339b5a8229",
+"playbackMode": false,
+"textSearchEnabled": false
+},
+"lastModified": 0,
+"dashboardVisualizations": [],
+"ownerSourceId": "5ec3f2bce8d967339b5a838e",
+"creatingUserName": "admin"
+},
+{
+"createdByUserID": "5ec3e951e8d967339b5a822a",
+"lastModifiedByUserID": "5ec3e951e8d967339b5a822a",
+"createdDate": "2020-05-19 14:52:44.289",
+"lastModifiedDate": "2020-05-19 14:52:45.971",
+"id": "5ec3f2bce8d967339b5a83aa",
+"visId": "5ec3e953e8d967339b5a8297",
+"accountId": "5ec3e951e8d967339b5a8229",
+"ownerType": "SOURCE",
+"name": "Donut",
+"type": "DONUT",
+"visualName": "Donut",
+"defaultTitle": "Donut",
+"enabled": true,
+"source": {
+"variables": {
+"Size": [
+{
+"name": "count"
+}
+],
+"Group By": {
+"name": "usergender",
+"limit": 10,
+"sort": {
+"name": "count",
+"dir": "desc"
+}
+}
+},
+"filters": [],
+"aggregateFilters": [],
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"sourceType": "EDC2",
+"live": false,
+"sourceName": "Real Time Sales",
+"accountId": "5ec3e951e8d967339b5a8229",
+"playbackMode": false,
+"textSearchEnabled": false
+},
+"lastModified": 0,
+"dashboardVisualizations": [],
+"ownerSourceId": "5ec3f2bce8d967339b5a838e",
+"creatingUserName": "admin"
+},
+{
+"createdByUserID": "5ec3e951e8d967339b5a822a",
+"lastModifiedByUserID": "5ec3e951e8d967339b5a822a",
+"createdDate": "2020-05-19 14:52:44.326",
+"lastModifiedDate": "2020-05-19 14:52:45.932",
+"id": "5ec3f2bce8d967339b5a83af",
+"visId": "5ec3e952e8d967339b5a8258",
+"accountId": "5ec3e951e8d967339b5a8229",
+"ownerType": "SOURCE",
+"name": "Pivot Table",
+"type": "PIVOT_TABLE",
+"visualName": "Pivot Table",
+"defaultTitle": "Pivot Table",
+"enabled": true,
+"source": {
+"variables": {
+"Metrics": [
+{
+"name": "count"
+}
+],
+"Column Attributes": [],
+"Metric Direction": "Columns",
+"Row Attributes": [
+{
+"name": "usergender"
+}
+],
+"Rows per Page": 200
+},
+"filters": [],
+"aggregateFilters": [],
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"sourceType": "EDC2",
+"live": false,
+"sourceName": "Real Time Sales",
+"accountId": "5ec3e951e8d967339b5a8229",
+"playbackMode": false,
+"textSearchEnabled": false
+},
+"lastModified": 0,
+"dashboardVisualizations": [],
+"ownerSourceId": "5ec3f2bce8d967339b5a838e",
+"creatingUserName": "admin"
+},
+{
+"createdByUserID": "5ec3e951e8d967339b5a822a",
+"lastModifiedByUserID": "5ec3e951e8d967339b5a822a",
+"createdDate": "2020-05-19 14:52:44.382",
+"lastModifiedDate": "2020-05-19 14:52:45.878",
+"id": "5ec3f2bce8d967339b5a83b7",
+"visId": "5ec3e953e8d967339b5a82b3",
+"accountId": "5ec3e951e8d967339b5a8229",
+"ownerType": "SOURCE",
+"name": "Floating Bubbles",
+"type": "FLOATING_BUBBLES",
+"visualName": "Floating Bubbles",
+"defaultTitle": "Floating Bubbles",
+"enabled": true,
+"source": {
+"variables": {
+"Multi Group By": [
+{
+"name": "usergender",
+"limit": 50,
+"sort": {
+"name": "count",
+"dir": "desc"
+}
+},
+{
+"name": "usersentiment",
+"limit": 20,
+"sort": {
+"name": "count",
+"dir": "desc"
+}
+}
+],
+"Size": [
+{
+"name": "count"
+}
+],
+"Y Axis": [
+{
+"name": "count"
+}
+]
+},
+"filters": [],
+"aggregateFilters": [],
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"sourceType": "EDC2",
+"live": false,
+"sourceName": "Real Time Sales",
+"accountId": "5ec3e951e8d967339b5a8229",
+"playbackMode": false,
+"textSearchEnabled": false
+},
+"lastModified": 0,
+"dashboardVisualizations": [],
+"ownerSourceId": "5ec3f2bce8d967339b5a838e",
+"creatingUserName": "admin"
+},
+{
+"createdByUserID": "5ec3e951e8d967339b5a822a",
+"lastModifiedByUserID": "5ec3e951e8d967339b5a822a",
+"createdDate": "2020-05-19 14:52:44.305",
+"lastModifiedDate": "2020-05-19 14:52:45.956",
+"id": "5ec3f2bce8d967339b5a83ac",
+"visId": "5ec3e952e8d967339b5a8243",
+"accountId": "5ec3e951e8d967339b5a8229",
+"ownerType": "SOURCE",
+"name": "Box Plot",
+"type": "BOX_PLOT",
+"visualName": "Box Plot",
+"defaultTitle": "Box Plot",
+"enabled": true,
+"source": {
+"variables": {
+"Metric": {
+"args": [
+0,
+25,
+50,
+75,
+100
+],
+"func": "percentiles",
+"name": "price"
+},
+"Group By": {
+"name": "usergender",
+"limit": 10,
+"sort": {
+"name": "count",
+"dir": "desc"
+}
+}
+},
+"filters": [],
+"aggregateFilters": [],
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"sourceType": "EDC2",
+"live": false,
+"sourceName": "Real Time Sales",
+"accountId": "5ec3e951e8d967339b5a8229",
+"playbackMode": false,
+"textSearchEnabled": false
+},
+"lastModified": 0,
+"dashboardVisualizations": [],
+"ownerSourceId": "5ec3f2bce8d967339b5a838e",
+"creatingUserName": "admin"
+},
+{
+"createdByUserID": "5ec3e951e8d967339b5a822a",
+"lastModifiedByUserID": "5ec3e951e8d967339b5a822a",
+"createdDate": "2020-05-19 14:52:44.369",
+"lastModifiedDate": "2020-05-19 14:52:45.893",
+"id": "5ec3f2bce8d967339b5a83b5",
+"visId": "5ec3e952e8d967339b5a824d",
+"accountId": "5ec3e951e8d967339b5a8229",
+"ownerType": "SOURCE",
+"name": "Word Cloud",
+"type": "WORD_CLOUD",
+"visualName": "Word Cloud",
+"defaultTitle": "Word Cloud",
+"enabled": true,
+"source": {
+"variables": {
+"Size": [
+{
+"name": "count"
+}
+],
+"Color": [
+{
+"colorConfig": {
+"autoShowColorLegend": true
+},
+"name": "count"
+}
+],
+"Group By": {
+"name": "usergender",
+"limit": 20,
+"sort": {
+"name": "count",
+"dir": "desc"
+}
+}
+},
+"filters": [],
+"aggregateFilters": [],
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"sourceType": "EDC2",
+"live": false,
+"sourceName": "Real Time Sales",
+"accountId": "5ec3e951e8d967339b5a8229",
+"playbackMode": false,
+"textSearchEnabled": false
+},
+"lastModified": 0,
+"dashboardVisualizations": [],
+"ownerSourceId": "5ec3f2bce8d967339b5a838e",
+"creatingUserName": "admin"
+},
+{
+"createdByUserID": "5ec3e951e8d967339b5a822a",
+"lastModifiedByUserID": "5ec3e951e8d967339b5a822a",
+"createdDate": "2020-05-19 14:52:44.312",
+"lastModifiedDate": "2020-05-19 14:52:45.945",
+"id": "5ec3f2bce8d967339b5a83ad",
+"visId": "5ec3e952e8d967339b5a8287",
+"accountId": "5ec3e951e8d967339b5a8229",
+"ownerType": "SOURCE",
+"name": "Bars: Multiple Metrics",
+"type": "MULTI_METRIC_BARS",
+"visualName": "Bars: Multiple Metrics",
+"defaultTitle": "Bars: Multiple Metrics",
+"enabled": true,
+"source": {
+"variables": {
+"Bar Height": [
+{
+"colorConfig": {
+"autoShowColorLegend": true
+},
+"name": "count"
+}
+],
+"Group By": {
+"name": "usergender",
+"limit": 20,
+"sort": {
+"name": "count",
+"dir": "desc"
+}
+}
+},
+"filters": [],
+"aggregateFilters": [],
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"sourceType": "EDC2",
+"live": false,
+"sourceName": "Real Time Sales",
+"accountId": "5ec3e951e8d967339b5a8229",
+"playbackMode": false,
+"textSearchEnabled": false
+},
+"lastModified": 0,
+"dashboardVisualizations": [],
+"ownerSourceId": "5ec3f2bce8d967339b5a838e",
+"creatingUserName": "admin"
+},
+{
+"createdByUserID": "5ec3e951e8d967339b5a822a",
+"lastModifiedByUserID": "5ec3e951e8d967339b5a822a",
+"createdDate": "2020-05-19 14:52:44.375",
+"lastModifiedDate": "2020-05-19 14:52:45.886",
+"id": "5ec3f2bce8d967339b5a83b6",
+"visId": "5ec3e953e8d967339b5a82a4",
+"accountId": "5ec3e951e8d967339b5a8229",
+"ownerType": "SOURCE",
+"name": "KPI",
+"type": "KPI",
+"visualName": "KPI",
+"defaultTitle": "KPI",
+"enabled": true,
+"source": {
+"variables": {
+"Comparison Data Color": "#ffffff",
+"Comparison Metric": [
+{
+"name": "none"
+}
+],
+"Label Color": "#ffffff",
+"Up Arrow Color": "#68ad44",
+"Background Color": "#585858",
+"Data Color": "#d6df23",
+"Metric": [
+{
+"name": "count"
+}
+],
+"Down Arrow Color": "#e46839"
+},
+"filters": [],
+"aggregateFilters": [],
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"sourceType": "EDC2",
+"live": false,
+"sourceName": "Real Time Sales",
+"accountId": "5ec3e951e8d967339b5a8229",
+"playbackMode": false,
+"textSearchEnabled": false
+},
+"lastModified": 0,
+"dashboardVisualizations": [],
+"ownerSourceId": "5ec3f2bce8d967339b5a838e",
+"creatingUserName": "admin"
+},
+{
+"createdByUserID": "5ec3e951e8d967339b5a822a",
+"lastModifiedByUserID": "5ec3e951e8d967339b5a822a",
+"createdDate": "2020-05-19 14:52:44.387",
+"lastModifiedDate": "2020-05-19 14:52:45.867",
+"id": "5ec3f2bce8d967339b5a83b8",
+"visId": "5ec3e953e8d967339b5a82b9",
+"accountId": "5ec3e951e8d967339b5a8229",
+"ownerType": "SOURCE",
+"name": "Bars: Histogram",
+"type": "HISTOGRAM",
+"visualName": "Bars: Histogram",
+"defaultTitle": "Bars: Histogram",
+"enabled": true,
+"source": {
+"variables": {
+"Bins Color": "#1f78b4",
+"Cumulative Line Color": "#ff7f00",
+"Group By": {
+"binsType": "auto",
+"values": "absolute",
+"name": "usersentiment",
+"binsWidth": 100,
+"cumulative": false,
+"binsCount": 10
+}
+},
+"filters": [],
+"aggregateFilters": [],
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"sourceType": "EDC2",
+"live": false,
+"sourceName": "Real Time Sales",
+"accountId": "5ec3e951e8d967339b5a8229",
+"playbackMode": false,
+"textSearchEnabled": false
+},
+"lastModified": 0,
+"dashboardVisualizations": [],
+"ownerSourceId": "5ec3f2bce8d967339b5a838e",
+"creatingUserName": "admin"
+},
+{
+"createdByUserID": "5ec3e951e8d967339b5a822a",
+"lastModifiedByUserID": "5ec3e951e8d967339b5a822a",
+"createdDate": "2020-05-19 14:52:44.271",
+"lastModifiedDate": "2020-05-19 14:52:45.991",
+"id": "5ec3f2bce8d967339b5a83a8",
+"visId": "5ec3e952e8d967339b5a827b",
+"accountId": "5ec3e951e8d967339b5a8229",
+"ownerType": "SOURCE",
+"name": "Tree Map",
+"type": "TREE_MAP",
+"visualName": "Tree Map",
+"defaultTitle": "Tree Map",
+"enabled": true,
+"source": {
+"variables": {
+"Size": [
+{
+"name": "count"
+}
+],
+"Color": [
+{
+"colorConfig": {
+"autoShowColorLegend": true
+},
+"name": "count"
+}
+],
+"Group By": {
+"name": "usergender",
+"limit": 100,
+"sort": {
+"name": "count",
+"dir": "desc"
+}
+}
+},
+"filters": [],
+"aggregateFilters": [],
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"sourceType": "EDC2",
+"live": false,
+"sourceName": "Real Time Sales",
+"accountId": "5ec3e951e8d967339b5a8229",
+"playbackMode": false,
+"textSearchEnabled": false
+},
+"lastModified": 0,
+"dashboardVisualizations": [],
+"ownerSourceId": "5ec3f2bce8d967339b5a838e",
+"creatingUserName": "admin"
+},
+{
+"createdByUserID": "5ec3e951e8d967339b5a822a",
+"lastModifiedByUserID": "5ec3e951e8d967339b5a822a",
+"createdDate": "2020-05-19 14:52:44.297",
+"lastModifiedDate": "2020-05-19 14:52:45.966",
+"id": "5ec3f2bce8d967339b5a83ab",
+"visId": "5ec3e952e8d967339b5a8264",
+"accountId": "5ec3e951e8d967339b5a8229",
+"ownerType": "SOURCE",
+"name": "Line Trend: Attribute Values",
+"type": "LINE_CHART_CONTINUOUS",
+"visualName": "Line Trend: Attribute Values",
+"defaultTitle": "Line Trend: Attribute Values",
+"enabled": true,
+"source": {
+"variables": {
+"Multi Group By": [
+{
+"name": "usergender",
+"limit": 20,
+"sort": {
+"name": "count",
+"dir": "desc"
+}
+},
+{
+"name": "shipdate",
+"limit": 1000,
+"sort": {
+"name": "shipdate",
+"dir": "asc"
+}
+}
+],
+"Y Axis": [
+{
+"name": "count"
+}
+]
+},
+"filters": [],
+"aggregateFilters": [],
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"sourceType": "EDC2",
+"live": false,
+"sourceName": "Real Time Sales",
+"accountId": "5ec3e951e8d967339b5a8229",
+"playbackMode": false,
+"textSearchEnabled": false
+},
+"lastModified": 0,
+"dashboardVisualizations": [],
+"ownerSourceId": "5ec3f2bce8d967339b5a838e",
+"creatingUserName": "admin"
+},
+{
+"createdByUserID": "5ec3e951e8d967339b5a822a",
+"lastModifiedByUserID": "5ec3e951e8d967339b5a822a",
+"createdDate": "2020-05-19 14:52:44.282",
+"lastModifiedDate": "2020-05-19 14:52:45.979",
+"id": "5ec3f2bce8d967339b5a83a9",
+"visId": "5ec3e952e8d967339b5a8260",
+"accountId": "5ec3e951e8d967339b5a8229",
+"ownerType": "SOURCE",
+"name": "Raw Data Table",
+"type": "RAW_DATA_TABLE",
+"visualName": "Raw Data Table",
+"defaultTitle": "Raw Data Table",
+"enabled": true,
+"source": {
+"variables": {
+"Columns": [
+{
+"name": "group",
+"limit": 250
+},
+{
+"name": "category",
+"limit": 250
+},
+{
+"name": "sku",
+"limit": 250
+},
+{
+"name": "usercity",
+"limit": 250
+},
+{
+"name": "userstate",
+"limit": 250
+},
+{
+"name": "usergender",
+"limit": 250
+},
+{
+"name": "userincome",
+"limit": 250
+},
+{
+"name": "price",
+"limit": 250
+},
+{
+"name": "plannedsales",
+"limit": 250
+},
+{
+"name": "usersentiment",
+"limit": 250
+},
+{
+"name": "zipcode",
+"limit": 250
+},
+{
+"name": "county",
+"limit": 250
+},
+{
+"name": "countycode",
+"limit": 250
+},
+{
+"name": "shipdate",
+"limit": 250
+},
+{
+"name": "saledate",
+"limit": 250
+},
+{
+"name": "ts",
+"limit": 250
+}
+],
+"Rows per Fetch": 250
+},
+"filters": [],
+"aggregateFilters": [],
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"sourceType": "EDC2",
+"live": false,
+"sourceName": "Real Time Sales",
+"accountId": "5ec3e951e8d967339b5a8229",
+"playbackMode": false,
+"textSearchEnabled": false
+},
+"lastModified": 0,
+"dashboardVisualizations": [],
+"ownerSourceId": "5ec3f2bce8d967339b5a838e",
+"creatingUserName": "admin"
+},
+{
+"createdByUserID": "5ec3e951e8d967339b5a822a",
+"lastModifiedByUserID": "5ec3e951e8d967339b5a822a",
+"createdDate": "2020-05-19 14:52:44.362",
+"lastModifiedDate": "2020-05-19 14:52:45.899",
+"id": "5ec3f2bce8d967339b5a83b4",
+"visId": "5ec3e952e8d967339b5a8281",
+"accountId": "5ec3e951e8d967339b5a8229",
+"ownerType": "SOURCE",
+"name": "Heat Map",
+"type": "HEAT_MAP",
+"visualName": "Heat Map",
+"defaultTitle": "Heat Map",
+"enabled": true,
+"source": {
+"variables": {
+"Multi Group By": [
+{
+"name": "usergender",
+"limit": 50,
+"sort": {
+"name": "count",
+"dir": "desc"
+}
+},
+{
+"name": "usersentiment",
+"limit": 20,
+"sort": {
+"name": "count",
+"dir": "desc"
+}
+}
+],
+"Color Metric": [
+{
+"colorConfig": {
+"autoShowColorLegend": true
+},
+"name": "count"
+}
+],
+"Show Metric Values": true
+},
+"filters": [],
+"aggregateFilters": [],
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"sourceType": "EDC2",
+"live": false,
+"sourceName": "Real Time Sales",
+"accountId": "5ec3e951e8d967339b5a8229",
+"playbackMode": false,
+"textSearchEnabled": false
+},
+"lastModified": 0,
+"dashboardVisualizations": [],
+"ownerSourceId": "5ec3f2bce8d967339b5a838e",
+"creatingUserName": "admin"
+},
+{
+"createdByUserID": "5ec3e951e8d967339b5a822a",
+"lastModifiedByUserID": "5ec3e951e8d967339b5a822a",
+"createdDate": "2020-05-19 14:52:44.341",
+"lastModifiedDate": "2020-05-19 14:52:45.921",
+"id": "5ec3f2bce8d967339b5a83b1",
+"visId": "5ec3e952e8d967339b5a823d",
+"accountId": "5ec3e951e8d967339b5a8229",
+"ownerType": "SOURCE",
+"name": "Bars",
+"type": "UBER_BARS",
+"visualName": "Bars",
+"defaultTitle": "Bars",
+"enabled": true,
+"source": {
+"variables": {
+"Multi Group By": [
+{
+"name": "usergender",
+"limit": 50,
+"sort": {
+"name": "count",
+"dir": "desc"
+}
+},
+{
+"name": "none",
+"limit": 20,
+"sort": {
+"name": "count",
+"dir": "desc"
+}
+}
+],
+"Metric": [
+{
+"name": "count"
+}
+],
+"Bar Color": [
+{
+"colorConfig": {
+"colorNumb": 3,
+"autoShowColorLegend": true,
+"colorSet": "ZoomSequential",
+"colors": [
+{
+"color": "#ffc65f",
+"name": "Color 1"
+},
+{
+"color": "#9eb778",
+"name": "Color 2"
+},
+{
+"color": "#0096b6",
+"name": "Color 3"
+}
+],
+"legendType": "palette"
+},
+"name": "count"
+}
+]
+},
+"filters": [],
+"aggregateFilters": [],
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"sourceType": "EDC2",
+"live": false,
+"sourceName": "Real Time Sales",
+"accountId": "5ec3e951e8d967339b5a8229",
+"playbackMode": false,
+"textSearchEnabled": false
+},
+"lastModified": 0,
+"dashboardVisualizations": [],
+"ownerSourceId": "5ec3f2bce8d967339b5a838e",
+"creatingUserName": "admin"
+},
+{
+"createdByUserID": "5ec3e951e8d967339b5a822a",
+"lastModifiedByUserID": "5ec3e951e8d967339b5a822a",
+"createdDate": "2020-05-19 14:52:44.319",
+"lastModifiedDate": "2020-05-19 14:52:45.938",
+"id": "5ec3f2bce8d967339b5a83ae",
+"visId": "5ec3e952e8d967339b5a8230",
+"accountId": "5ec3e951e8d967339b5a8229",
+"ownerType": "SOURCE",
+"name": "Packed Bubbles",
+"type": "BUBBLES",
+"visualName": "Packed Bubbles",
+"defaultTitle": "Packed Bubbles",
+"enabled": true,
+"source": {
+"variables": {
+"Bubble Size": [
+{
+"name": "count"
+}
+],
+"Bubble Color": [
+{
+"colorConfig": {
+"autoShowColorLegend": true
+},
+"name": "count"
+}
+],
+"Group By": {
+"name": "usergender",
+"limit": 20,
+"sort": {
+"name": "count",
+"dir": "desc"
+}
+}
+},
+"filters": [],
+"aggregateFilters": [],
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"sourceType": "EDC2",
+"live": false,
+"sourceName": "Real Time Sales",
+"accountId": "5ec3e951e8d967339b5a8229",
+"playbackMode": false,
+"textSearchEnabled": false
+},
+"lastModified": 0,
+"dashboardVisualizations": [],
+"ownerSourceId": "5ec3f2bce8d967339b5a838e",
+"creatingUserName": "admin"
+},
+{
+"createdByUserID": "5ec3e951e8d967339b5a822a",
+"lastModifiedByUserID": "5ec3e951e8d967339b5a822a",
+"createdDate": "2020-05-19 14:52:44.394",
+"lastModifiedDate": "2020-05-19 14:52:45.858",
+"id": "5ec3f2bce8d967339b5a83b9",
+"visId": "5ec3e952e8d967339b5a8253",
+"accountId": "5ec3e951e8d967339b5a8229",
+"ownerType": "SOURCE",
+"name": "Pie",
+"type": "PIE",
+"visualName": "Pie",
+"defaultTitle": "Pie",
+"enabled": true,
+"source": {
+"variables": {
+"Size": [
+{
+"name": "count"
+}
+],
+"Group By": {
+"name": "usergender",
+"limit": 20,
+"sort": {
+"name": "count",
+"dir": "desc"
+}
+}
+},
+"filters": [],
+"aggregateFilters": [],
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"sourceType": "EDC2",
+"live": false,
+"sourceName": "Real Time Sales",
+"accountId": "5ec3e951e8d967339b5a8229",
+"playbackMode": false,
+"textSearchEnabled": false
+},
+"lastModified": 0,
+"dashboardVisualizations": [],
+"ownerSourceId": "5ec3f2bce8d967339b5a838e",
+"creatingUserName": "admin"
+},
+{
+"createdByUserID": "5ec3e951e8d967339b5a822a",
+"lastModifiedByUserID": "5ec3e951e8d967339b5a822a",
+"createdDate": "2020-05-19 14:52:44.348",
+"lastModifiedDate": "2020-05-19 14:52:45.913",
+"id": "5ec3f2bce8d967339b5a83b2",
+"visId": "5ec3e952e8d967339b5a8248",
+"accountId": "5ec3e951e8d967339b5a8229",
+"ownerType": "SOURCE",
+"name": "Line Trend: Multiple Metrics",
+"type": "LINE_CHART",
+"visualName": "Line Trend: Multiple Metrics",
+"defaultTitle": "Line Trend: Multiple Metrics",
+"enabled": true,
+"source": {
+"variables": {
+"Y Axis": [
+{
+"colorConfig": {
+"autoShowColorLegend": true
+},
+"name": "count"
+}
+],
+"Trend Attribute": {
+"name": "shipdate",
+"limit": 1000,
+"sort": {
+"name": "shipdate",
+"dir": "asc"
+}
+}
+},
+"filters": [],
+"aggregateFilters": [],
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"sourceType": "EDC2",
+"live": false,
+"sourceName": "Real Time Sales",
+"accountId": "5ec3e951e8d967339b5a8229",
+"playbackMode": false,
+"textSearchEnabled": false
+},
+"lastModified": 0,
+"dashboardVisualizations": [],
+"ownerSourceId": "5ec3f2bce8d967339b5a838e",
+"creatingUserName": "admin"
+},
+{
+"createdByUserID": "5ec3e951e8d967339b5a822a",
+"lastModifiedByUserID": "5ec3e951e8d967339b5a822a",
+"createdDate": "2020-05-19 14:52:44.333",
+"lastModifiedDate": "2020-05-19 14:52:45.927",
+"id": "5ec3f2bce8d967339b5a83b0",
+"visId": "5ec3e952e8d967339b5a8236",
+"accountId": "5ec3e951e8d967339b5a8229",
+"ownerType": "SOURCE",
+"name": "Scatter Plot",
+"type": "SCATTERPLOT",
+"visualName": "Scatter Plot",
+"defaultTitle": "Scatter Plot",
+"enabled": true,
+"source": {
+"variables": {
+"X Axis": [
+{
+"name": "count"
+}
+],
+"Size": [
+{
+"name": "count"
+}
+],
+"Y Axis": [
+{
+"name": "count"
+}
+],
+"Group By": {
+"name": "usergender",
+"limit": 20,
+"sort": {
+"name": "count",
+"dir": "desc"
+}
+}
+},
+"filters": [],
+"aggregateFilters": [],
+"sourceId": "5ec3f2bce8d967339b5a838e",
+"sourceType": "EDC2",
+"live": false,
+"sourceName": "Real Time Sales",
+"accountId": "5ec3e951e8d967339b5a8229",
+"playbackMode": false,
+"textSearchEnabled": false
+},
+"lastModified": 0,
+"dashboardVisualizations": [],
+"ownerSourceId": "5ec3f2bce8d967339b5a838e",
+"creatingUserName": "admin"
+}
+],
+"formulas": [],
+"version": "ZOOMDATA-VERSION-PLACEHOLDER"
+},
+"customVisualizations": [],
+"keysets": []
 }
