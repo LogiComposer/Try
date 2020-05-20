@@ -1,6 +1,6 @@
 version: '2.3'
 services:
-  # --- Zoomdata services (web, qe) --------
+  # --- LogiComposer services (web, qe) --------
   zoomdata-web:
     hostname: zoomdata-web
     image: ${ZD_REPO}zoomdata:${ZD_TAG}
