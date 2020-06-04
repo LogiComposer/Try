@@ -1,5 +1,10 @@
 #!/bin/sh
 
+##############################################################################
+## Created by LogiAnalytics team May/2020
+## Author: Niyakiy (eugene.chepurniy@logianalytics.com)
+##############################################################################
+
 set -e
 
 DEFAULT_TIMEOUT=300
@@ -13,7 +18,7 @@ mkdir -p data/pgdata
 docker-compose "$@"
 
 if [ "$1" == "up" ]; then
-    echo "Waiting for Zoomdata instance to start. Max 300 seconds"
+    echo "Waiting for LogiComposer instance to start. Max 300 seconds"
     until $(curl --output /dev/null --silent --head --fail http://zoomdata-web:8080); do
         printf '.'
         sleep 1

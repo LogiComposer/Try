@@ -1,6 +1,6 @@
 ##############################################################################
-## Created by Zoomdata/Logi team Dec/2019
-## Author: Niyakiy (jonny.niyakiy@gmail.com)
+## Created by LogiAnalytics team May/2020
+## Author: Niyakiy (eugene.chepurniy@logianalytics.com)
 ##############################################################################
 
 New-Item -ItemType Directory -Force -Path data
@@ -18,6 +18,6 @@ docker-compose `
     $args
 
 If ($args[0] -eq "up") {
-  Write-Host "Waiting for Zoomdata instance to start. Max 300 seconds"
+  Write-Host "Waiting for LogiComposer instance to start. Max 300 seconds"
   support/http-ping.ps1 -url http://localhost:8080/
 }
