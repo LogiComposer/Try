@@ -25,14 +25,18 @@ if [ $timeout_counter -lt $DEFAULT_TIMEOUT ]; then
         -d '[{"user": "admin", "password": "admin"}, {"user": "supervisor", "password": "supervisor"}]'
 
     echo "Importing RTS demo dashboard"
-    VERSION=$(curl -s zoomdata-web:8080/zoomdata/api/version | jq -r .version)
-    echo "  extracted LogiComposer version: ${VERSION}"
-    sed -i "s/ZOOMDATA-VERSION-PLACEHOLDER/$VERSION/g" supply-files/rts-dashboard.json
-    curl -u "admin:admin" -L -X POST \
-        -H "Content-Type: application/vnd.zoomdata.v2+json" \
-        -H "Accept: */*" \
-        -d @supply-files/rts-dashboard.json \
-        http://zoomdata-web:8080/zoomdata/api/dashboards/import
+    if ! curl -s -X GET -uadmin:admin "http://zoomdata-web:8080/zoomdata/api/dashboards?byCurrentUser=true" -H "accept: application/vnd.zoomdata.v2+json" | jq -r '(.bookmarksMap[].name == "RTS Sample Dashboard")' | grep -q true; then
+        VERSION=$(curl -s zoomdata-web:8080/zoomdata/api/version | jq -r .version)
+        echo "  extracted LogiComposer version: ${VERSION}"
+        sed -i "s/ZOOMDATA-VERSION-PLACEHOLDER/$VERSION/g" supply-files/rts-dashboard.json
+        curl -u "admin:admin" -L -X POST \
+            -H "Content-Type: application/vnd.zoomdata.v2+json" \
+            -H "Accept: */*" \
+            -d @supply-files/rts-dashboard.json \
+            http://zoomdata-web:8080/zoomdata/api/dashboards/import
+    else
+        echo "RTS sample dashboard is already present - skipping import"
+    fi
 
 else
     echo "LogiComposer wasn't able to start within $DEFAULT_TIMEOUT seconds. Examine the docker logs."
